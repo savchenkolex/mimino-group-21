@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/mimino-group-21/assets/main-fac82e35.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/index-66886d44.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/index-d4c2ed6f.css">
   </head>
   <body>
     <header>
@@ -54,6 +54,157 @@
 
     <!-- Loads the specified .html file -->
 
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close buttons" data-modal-close>
+      <svg class="modal-icon" width="24" height="24">
+        <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+      </svg>
+    </button>
+    <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
+    <form class="modal-form">
+      <label class="modal-label">
+        <input
+          type="text"
+          name="user-name"
+          class="modal-input username"
+          placeholder="Ваше ім’я"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        />
+        <span class="modal-label-text">На кого забронювати номер?</span>
+      </label>
+      <label class="modal-label">
+        <input
+          type="tel"
+          name="phone"
+          class="modal-input phone"
+          placeholder="+38 (___) ___-__-__"
+          required
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        />
+        <span class="modal-label-text">Номер телефону</span>
+      </label>
+      <label class="modal-label">
+        <select name="room" class="modal-select">
+          <option value="2">Двомісний</option>
+          <option value="2L" selected>Двомісний люкс</option>
+          <option value="3">Трьохмісний</option>
+        </select>
+        <span class="modal-label-text">Категорія номеру</span>
+      </label>
+      <label class="modal-label">
+        <select name="date-arrival" class="modal-select">
+          <option value="today" selected>Сьогодні</option>
+          <option value="tomorrow">Завтра</option>
+          <option value="week-later">Через неділю</option>
+        </select>
+        <span class="modal-label-text">Дата заїзду</span>
+      </label>
+      <label class="modal-label">
+        <select name="date-departure" class="modal-select">
+          <option value="today" selected>Сьогодні</option>
+          <option value="tomorrow">Завтра</option>
+          <option value="week-later">Через неділю</option>
+        </select>
+        <span class="modal-label-text">Дата виїзду</span>
+      </label>
+      <button type="submit" class="modal-submit buttons">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+    <div class="modal hidden">
+  <button class="modal-close buttons" data-modal-close>
+    <svg class="modal-icon" width="24" height="24">
+      <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЗАБРОНЮВАТИ СТОЛИК</h1>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-input username"
+        placeholder="Ваше ім’я"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      />
+      <span class="modal-label-text">На кого забронювати номер?</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="tel"
+        name="phone"
+        class="modal-input phone"
+        placeholder="+38 (___) ___-__-__"
+        required
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+      <span class="modal-label-text">Номер телефону</span>
+    </label>
+    <label class="modal-label">
+      <select name="number-persons" class="modal-select">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <span class="modal-label-text">Столик на яку кількість осіб?</span>
+    </label>
+    <label class="modal-label">
+      <select name="date-arrival" class="modal-select">
+        <option value="today" selected>Сьогодні</option>
+        <option value="tomorrow">Завтра</option>
+        <option value="week-later">Через неділю</option>
+      </select>
+      <span class="modal-label-text">На яку дату бронювати?</span>
+    </label>
+    <button type="submit" class="modal-submit buttons">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </form>
+</div>
+
+    <div class="modal">
+  <button class="modal-close buttons" data-modal-close>
+    <svg class="modal-icon" width="24" height="24">
+      <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЦІНИ НА НОМЕР</h1>
+  <p class="modal-paragraph">Двомісний люкс</p>
+  <p class="modal-label-text room-category">Категорія номеру</p>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="sum-nights"
+        class="modal-input"
+        placeholder="1"
+        required
+        pattern=""
+      />
+      <span class="modal-label-text">Кількість ночей</span>
+    </label>
+    <label class="modal-label">
+      <input 
+      type="text"
+        name="price"
+        class="modal-input"
+        placeholder="1000"
+        required
+        pattern="" />
+      <span class="modal-label-text">грн</span>
+    </label>
+    <button type="submit" class="modal-submit buttons">
+        ЗАБРОНЮВАТИ НОМЕР
+    </button>
+  </form>
+</div>
 
 
 </body>
