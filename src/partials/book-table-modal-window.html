@@ -1,0 +1,52 @@
+<div class="modal hidden">
+  <button class="modal-close buttons" data-modal-close>
+    <svg class="modal-icon" width="24" height="24">
+      <use href="./img/icons.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЗАБРОНЮВАТИ СТОЛИК</h1>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-input username"
+        placeholder="Ваше ім’я"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      />
+      <span class="modal-label-text">На кого забронювати номер?</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="tel"
+        name="phone"
+        class="modal-input phone"
+        placeholder="+38 (___) ___-__-__"
+        required
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+      <span class="modal-label-text">Номер телефону</span>
+    </label>
+    <label class="modal-label">
+      <select name="number-persons" class="modal-select">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <span class="modal-label-text">Столик на яку кількість осіб?</span>
+    </label>
+    <label class="modal-label">
+      <select name="date-arrival" class="modal-select">
+        <option value="today" selected>Сьогодні</option>
+        <option value="tomorrow">Завтра</option>
+        <option value="week-later">Через неділю</option>
+      </select>
+      <span class="modal-label-text">На яку дату бронювати?</span>
+    </label>
+    <button type="submit" class="modal-submit buttons">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </form>
+</div>
