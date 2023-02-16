@@ -23,3 +23,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@font-face {
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3.ttf");
+}
