@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/universal-modal-7ae64c72.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/universal-modal-217c8810.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/universal-modal-c3c7e56b.css">
   </head>
   <body>
 <header>
@@ -50,10 +50,11 @@
         </nav>
 </header>
 <!--  -->
-    <section class="hero hotel-section">
+<main>
+  <div class="container">
+    <section class="hero">
   <h1 class="title-hero">MIMIHO</h1>
-  <h2 class="h-hero">Ресторанно-готельний комплекс</h2>
-  <p class="p-hero">СМАК ЖИТТЯ 24/7</p>
+  <h2 class="h-hero">Готель</h2>
   <a
     href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
     target="_blank"
@@ -62,20 +63,20 @@
   <ul class="reserve-ul-hero">
     <li class="reserve-li-hero">
       <button
-      type="button"
-        class="js-open-modal"
-        data-modal="1"
-      >
-        Забронювати номер
-      </button>
-    </li>
-    <li class="reserve-li-hero">
-      <button
-        class="reserve-button-hero hotel-button room-price-window js-open-modal"
+        class="reserve-button-hero js-open-modal"
         type="button"
         data-modal="2"
       >
         Забронювати столик
+      </button>
+    </li>
+    <li class="reserve-li-hero">
+      <button
+        class="reserve-button-hero js-open-modal"
+        type="button"
+        data-modal="1"
+      >
+        Забронювати номер
       </button>
     </li>
   </ul>
@@ -104,70 +105,104 @@
   </ul>
 </section>
 
-<!--  -->
-    <section class="room_for_2_luxe">
-  <p class="hotel p_text">Amet minim mollit non</p>
-  <a class="hotel logo_text">mimino</a>
-  <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР люкс</h1>
-  <p class="hotel-section-p_text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <img alt="Двоміcний номер люкс" width="244" height="322" />
-  <ul class="group-button-hotel-section">
-    <li class="list-button-hotel-section">
-      <a class="button-hotel-about" href="#">Детальніше</a>
-    </li>
-    <li class="list-button-hotel-section">
-      <button class="button-hotel-room_price">Переглянути ціни</button>
-    </li>
-  </ul>
+    <!--  -->
+    <!-- 1 секція Hotel Page -->
+<section class="room_for_2_luxe">
+  <div class="hotel-block">
+    <div class="hotel-block-text">
+      <p class="hotel p_text">Amet minim mollit non</p>
+      <a class="hotel logo_text">mimiho</a>
+      <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР люкс</h1>
+      <p class="hotel-section-p_text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <div class="thumb-hotel-img">
+      <img alt="Двомісний номер люкс" width="244" height="322" />
+    </div>
+  </div>
+  <div class="hotel-block-button">
+    <ul class="group-button-hotel-section">
+      <li class="list-button-hotel-section">
+        <a class="button-hotel-about" href="../room-page.html">Детальніше</a>
+      </li>
+      <li class="list-button-hotel-section">
+        <button class="button-hotel-room_price js-open-modal">
+          Переглянути ціни
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>
 
-    <section class="room_for_3">
-  <p class="hotel p_text">Amet minim mollit non</p>
-  <a class="hotel logo_text">mimino</a>
-  <h1 class="hotel-section-section_text">ТРЬОХМІСНИЙ НОМЕР</h1>
-  <p class="hotel-section-p_text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <img alt="Трьохмісний номер" width="244" height="322" />
-  <ul class="group-button-hotel-section">
-    <li class="list-button-hotel-section">
-      <a class="button-hotel-about" href="#">Детальніше</a>
-    </li>
-    <li class="list-button-hotel-section">
-      <button class="button-hotel-room_price">Переглянути ціни</button>
-    </li>
-  </ul>
+    <!-- 2 секція Hotel Page -->
+<section class="room_for_3">
+  <div class="hotel-block">
+    <div class="hotel-block-text">
+      <p class="hotel p_text">Amet minim mollit non</p>
+      <a class="hotel logo_text">mimiho</a>
+      <h1 class="hotel-section-section_text">ТРЬОХМІСНИЙ НОМЕР</h1>
+      <p class="hotel-section-p_text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <div class="thumb-hotel-img">
+      <img alt="Трьохмісний номер" width="244" height="322" />
+    </div>
+  </div>
+  <div class="hotel-block-button">
+    <ul class="group-button-hotel-section">
+      <li class="list-button-hotel-section">
+        <a class="button-hotel-about" href="../room-page.html">Детальніше</a>
+      </li>
+      <li class="list-button-hotel-section">
+        <button class="button-hotel-room_price js-open-modal">
+          Переглянути ціни
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>
 
-    <section class="room_for_2">
-  <p class="hotel p_text">Amet minim mollit non</p>
-  <a class="hotel logo_text">mimino</a>
-  <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР</h1>
-  <p class="hotel-section-p_text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <img alt="Двомісний номер" width="244" height="322" />
-  <ul class="group-button-hotel-section">
-    <li class="list-button-hotel-section">
-      <a class="button-hotel-about" href="#">Детальніше</a>
-    </li>
-    <li class="list-button-hotel-section">
-      <button class="button-hotel-room_price">Переглянути ціни</button>
-    </li>
-  </ul>
+    <!-- 3 секція Hotel Page -->
+<section class="room_for_2">
+  <div class="hotel-block">
+    <div class="hotel-block-text">
+      <p class="hotel p_text">Amet minim mollit non</p>
+      <a class="hotel logo_text">mimiho</a>
+      <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР</h1>
+      <p class="hotel-section-p_text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <div class="thumb-hotel-img">
+      <img alt="Двомісний номер" width="244" height="322" />
+    </div>
+  </div>
+  <div class="hotel-block-button">
+    <ul class="group-button-hotel-section">
+      <li class="list-button-hotel-section">
+        <a class="button-hotel-about" href="../room-page.html">Детальніше</a>
+      </li>
+      <li class="list-button-hotel-section">
+        <button class="button-hotel-room_price js-open-modal">
+          Переглянути ціни
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>
 
-
-    <!-- Kate -->
-    <div class="modal" data-modal="1">
+  </div>
+</main>
+<!-- Kate -->
+<div class="modal" data-modal="1">
   <button class="modal-close buttons js-modal-close">
     <svg class="modal-icon" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
@@ -227,7 +262,7 @@
   </form>
 </div>
 
-    <div class="modal" data-modal="2">
+<div class="modal" data-modal="2">
   <button class="modal-close buttons js-modal-close">
     <svg class="modal-icon" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
@@ -280,7 +315,7 @@
   </form>
 </div>
 
-    <div class="modal price">
+<div class="modal price">
   <button class="modal-close buttons">
     <svg class="modal-icon" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
@@ -318,7 +353,7 @@
   </form>
 </div>
 
-    <div class="overlay js-overlay-modal"></div>
+<div class="overlay js-overlay-modal"></div>
 <footer>
   <section>
     <p class="footer-title">
