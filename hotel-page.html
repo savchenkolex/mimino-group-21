@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/universal-modal-7ae64c72.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/universal-modal-d39c2dd8.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/universal-modal-217c8810.css">
   </head>
   <body>
 <header>
@@ -167,71 +167,69 @@
 
 
     <!-- Kate -->
-    <div class="modal" data-modal="1" >
-  <div class="" >
-    <button class="modal__cross js-modal-close">
-      <svg class="modal-icon" width="24" height="24">
-        <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
-      </svg>
+    <div class="modal" data-modal="1">
+  <button class="modal-close buttons js-modal-close">
+    <svg class="modal-icon" width="24" height="24">
+      <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-input username"
+        placeholder="Ваше ім’я"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      />
+      <span class="modal-label-text">На кого забронювати номер?</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="tel"
+        name="phone"
+        class="modal-input phone"
+        placeholder="+38 (___) ___-__-__"
+        required
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+      <span class="modal-label-text">Номер телефону</span>
+    </label>
+    <label class="modal-label">
+      <select name="room" class="modal-select">
+        <option value="2">Двомісний</option>
+        <option value="2L" selected>Двомісний люкс</option>
+        <option value="3">Трьохмісний</option>
+      </select>
+      <span class="modal-label-text">Категорія номеру</span>
+    </label>
+    <label class="modal-label">
+      <select name="date-arrival" class="modal-select">
+        <option value="today" selected>Сьогодні</option>
+        <option value="tomorrow">Завтра</option>
+        <option value="week-later">Через неділю</option>
+      </select>
+      <span class="modal-label-text">Дата заїзду</span>
+    </label>
+    <label class="modal-label">
+      <select name="date-departure" class="modal-select">
+        <option value="today" selected>Сьогодні</option>
+        <option value="tomorrow">Завтра</option>
+        <option value="week-later">Через неділю</option>
+      </select>
+      <span class="modal-label-text">Дата виїзду</span>
+    </label>
+    <button type="submit" class="modal-submit buttons">
+      ОФОРМИТИ БРОНЮВАННЯ
     </button>
-    <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
-    <form class="modal-form">
-      <label class="modal-label">
-        <input
-          type="text"
-          name="user-name"
-          class="modal-input username"
-          placeholder="Ваше ім’я"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-        />
-        <span class="modal-label-text">На кого забронювати номер?</span>
-      </label>
-      <label class="modal-label">
-        <input
-          type="tel"
-          name="phone"
-          class="modal-input phone"
-          placeholder="+38 (___) ___-__-__"
-          required
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        />
-        <span class="modal-label-text">Номер телефону</span>
-      </label>
-      <label class="modal-label">
-        <select name="room" class="modal-select">
-          <option value="2">Двомісний</option>
-          <option value="2L" selected>Двомісний люкс</option>
-          <option value="3">Трьохмісний</option>
-        </select>
-        <span class="modal-label-text">Категорія номеру</span>
-      </label>
-      <label class="modal-label">
-        <select name="date-arrival" class="modal-select">
-          <option value="today" selected>Сьогодні</option>
-          <option value="tomorrow">Завтра</option>
-          <option value="week-later">Через неділю</option>
-        </select>
-        <span class="modal-label-text">Дата заїзду</span>
-      </label>
-      <label class="modal-label">
-        <select name="date-departure" class="modal-select">
-          <option value="today" selected>Сьогодні</option>
-          <option value="tomorrow">Завтра</option>
-          <option value="week-later">Через неділю</option>
-        </select>
-        <span class="modal-label-text">Дата виїзду</span>
-      </label>
-      <button type="submit" class="modal-submit buttons">
-        ОФОРМИТИ БРОНЮВАННЯ
-      </button>
-    </form>
-  </div>
+  </form>
 </div>
 
     <div class="modal" data-modal="2">
-  <button >
-    <svg class="modal__cross js-modal-close" width="24" height="24">
+  <button class="modal-close buttons js-modal-close">
+    <svg class="modal-icon" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
     </svg>
   </button>
@@ -282,8 +280,8 @@
   </form>
 </div>
 
-    <div class="modal">
-  <button class="modal-close buttons" data-modal-close>
+    <div class="modal price">
+  <button class="modal-close buttons">
     <svg class="modal-icon" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
     </svg>
@@ -304,17 +302,18 @@
       <span class="modal-label-text">Кількість ночей</span>
     </label>
     <label class="modal-label">
-      <input 
-      type="text"
+      <input
+        type="text"
         name="price"
         class="modal-input"
         placeholder="1000"
         required
-        pattern="" />
+        pattern=""
+      />
       <span class="modal-label-text">грн</span>
     </label>
     <button type="submit" class="modal-submit buttons">
-        ЗАБРОНЮВАТИ НОМЕР
+      ЗАБРОНЮВАТИ НОМЕР
     </button>
   </form>
 </div>
