@@ -5,8 +5,8 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./modal-window.css');
+@import url('./hotel.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -27,4 +27,62 @@
 @font-face {
   font-family: "Film P3";
   src: url("../fonts/FilmP3.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3Bold";
+  src: url("../fonts/FilmP3Bold.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3Light";
+  src: url("../fonts/FilmP3Light.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3NarrowBold";
+  src: url("../fonts/FilmP3NarrowBold.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3NarrowLight" ;
+  src: url("../fonts/FilmP3NarrowLight.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3Narrow.ttf";
+  src: url("../fonts/FilmP3Narrow.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3WideBold" ;
+  src: url("../fonts/FilmP3WideBold.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3WideLight" ;
+  src: url("../fonts/FilmP3WideLight.ttf");
+}
+
+@font-face {
+  font-family: "FilmP3Wide" ;
+  src: url("../fonts/FilmP3Wide.ttf");
+}
+
+@media screen and (min-width: 414px) {
+  .container { 
+    width: 414px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
