@@ -5,21 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/mimino-group-21/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/mimino-group-21/assets/main-fac82e35.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/index-d4c2ed6f.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="module" crossorigin src="/mimino-group-21/assets/universal-modal-7c25001d.js"></script>
   </head>
   <body>
+<!-- Victoria R -->
     <header>
         <nav>
-            <a href="" class="logo-header">MIMIHO</a>
+            <a href="../index.html" class="logo-header">MIMIHO</a>
             <ul class="site-nav">
                 <li class="li-nav">
-                    <a href="">Ресторан</a>
+                    <a href="../restaurant-page.html">Ресторан</a>
                     <a href="tel:+380955559533" class="tel-header">095 555 95 33</a>
                 </li>
                 <li class="li-nav">
-                    <a href="">Готель</a>
+                    <a href="../hotel-page.html">Готель</a>
                     <a href="tel:+380668491089" class="tel-header">066 849 10 89</a>
                 </li>
             </ul>
@@ -55,10 +56,10 @@
     <a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl" target="_blank">Україна, м. Полтава, вул. Маршала Бірюзова, 15</a>
     <ul class="reserve-ul-hero">
         <li class="reserve-li-hero">
-            <button class="reserve-button-hero" type="button">Забронювати столик</button>
+            <button class="reserve-button-hero js-open-modal" type="button" data-modal="2">Забронювати столик</button>
         </li>
         <li class="reserve-li-hero">
-            <button class="reserve-button-hero" type="button">Забронювати номер</button>
+            <button class="reserve-button-hero js-open-modal" type="button" data-modal="1">Забронювати номер</button>
         </li>
     </ul>
     <ul class="networks-hero networks">
@@ -85,12 +86,34 @@
         </li>
     </ul>
 </section>
-
-    <!-- Loads the specified .html file -->
-
-    <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-close buttons" data-modal-close>
+<!--  -->
+    
+    
+<!--  -->
+    <section class="main-about-hotel">
+    <h3 class="container">About our hotel</h3>
+    <img src="../img/" alt="Room with grey walls and big bed" width="460"/>
+    <p class="hotel-description-top">Amet minim mollit non</p>
+    <h3>Міміно</h3>
+    <p>
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+    <p class="hotel-discription-bottom">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+    <img src="" alt="Lobby of the hotel" width="460">
+  </section>
+    
+<!--Sergii Stoiachko -->
+    
+<!-- Kate -->
+    <div class="modal" data-modal="1" >
+  <div class="" >
+    <button class="modal__cross js-modal-close">
       <svg class="modal-icon" width="24" height="24">
         <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
       </svg>
@@ -150,9 +173,9 @@
   </div>
 </div>
 
-    <div class="modal hidden">
-  <button class="modal-close buttons" data-modal-close>
-    <svg class="modal-icon" width="24" height="24">
+    <div class="modal" data-modal="2">
+  <button >
+    <svg class="modal__cross js-modal-close" width="24" height="24">
       <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
     </svg>
   </button>
@@ -240,6 +263,8 @@
   </form>
 </div>
 
+    <div class="overlay js-overlay-modal"></div>
+<!-- Kristina Litvinenko -->
 
 </body>
 </html>
