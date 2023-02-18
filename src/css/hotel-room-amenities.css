@@ -19,9 +19,8 @@
     @media screen and (min-width: 1280px) {
     .container-amenities {
     max-width: 1280px;
-    }
-         
-    }
+    }   
+}
 
 .amenities__title{
     margin-bottom: 16px;
@@ -60,19 +59,12 @@
 @media screen and (min-width:1024px) {
     .amenities__set {
         padding-right: 97px;
-   
     }
 }
 
 .amenities__item{
     margin-bottom: 32px;
 }
-
-/* @media screen and (min-width:1024px) {
-    .amenities__item {
-        width: 400px;
-    }
-} */
 
 @media screen and (min-width:1024px) {
     .amenities__text-box {
@@ -103,12 +95,19 @@
     
     color: #7A7A7A;
 }
-/* @media screen and (min-width:1024px) {
-    .amenities__text-box{
-   
-      
+@media screen and (min-width:1024px) {
+    .amenities__item-text{
+     width: 400px;
     }
-} */
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__item-text:not(:last-child) {
+      margin-right: 80px;
+    }
+}
+
+
 
 
 .amenities__booking{
