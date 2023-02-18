@@ -1,10 +1,27 @@
-.container-amenities {
+.container-amenities{
     min-width: 320px;
     max-width: 414px;
     padding: 32px 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
+    @media screen and (min-width:1024px) {
+    .container-amenities{
+     max-width: 1024px;
+     padding-left:47px;
+     padding-right: 47px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+    }
+      }
+      
+    @media screen and (min-width: 1280px) {
+    .container-amenities {
+    max-width: 1280px;
+    }
+         
+    }
 
 .amenities__title{
     margin-bottom: 16px;
@@ -29,12 +46,19 @@
     color: #7A7A7A;
 }
 
+@media screen and (min-width:1024px) {
+    .amenities__text {
+        width: 757px;
+    }
+}
+
 .amenities__set {
     display: flex;
     flex-wrap: wrap;
     margin-top: 32px;
    
 }
+
 .amenities__item{
     margin-bottom: 32px;
 }
@@ -65,12 +89,21 @@
 
 .amenities__booking{
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+@media screen and (min-width:1024px) {
+    .amenities__booking {
+    flex-direction: column;
+    align-content: flex-end;
+    }
+}
+
 .amenities__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 20px;
@@ -80,45 +113,64 @@
     width: 384px;
     height: 64px;
     padding: 20px 43px;
-    gap: 10px;
     margin: 0;
     background-color: #000000;
     border: 1px solid;
     border-color: #F3C653;
     border-radius: 25px;
-    display: flex;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
+  
     transition: background-color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
 }
 
+@media screen and (min-width:1024px) {
+    .amenities__button {
+    font-size: 24px;
+    line-height: 1.21;
+    width: 434px;
+    height: 64px;
+    padding: 18px 38px;
+    }
+}
+
 .amenities__button:hover,
 .amenities__button:focus {
-  background-color: #ffffff;
-  border-color: #f3c653;
-  color: #f3c653;
+  background-color:#F3C653;
+  border-color:#F3C653;
+  color: #000000;
 }
 
 .amenities__link{
     display: flex;
+    align-items: center;
     margin-top: 20px;
-    margin-right: 12.75px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #C79002;
-    background-color: #FFFDEE;
+    transition: color 250ms var(--timing-function);
+}
+
+.amenities__link-text{
+    margin-right: 12px;
 }
 
 .amenities__icon{
-    position: absolute;
-    right: 10%;
-    top:80%;
     fill: #C79002;
+    transition: fill 250ms var(--timing-function);
+}
+
+.amenities__link:hover,
+.amenities__link:focus{
+    color: #F3C653;
+}
+
+.amenities__link:hover .amenities__icon,
+.amenities__link:focus .amenities__icon{
+   fill: #F3C653;
 }
 
 
