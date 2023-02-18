@@ -1,6 +1,7 @@
 .hotel-room-amenities{
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: #FFFDEE;
 }
 
 @media screen and (min-width:1024px) {
@@ -93,7 +94,7 @@
 @media screen and (min-width:1024px) {
     .amenities__item-text{
      width: 400px;
-    
+     margin-bottom: 0px;
     }
 }
 
@@ -101,6 +102,12 @@
     .amenities__item-text:not(:last-child) {
       margin-right: 80px;
     }
+
+@media screen and (min-width:1280px) {
+.amenities__item-text:not(:last-child) {
+    margin-right: 159px;
+}
+}
 }
 
 .amenities__booking{
@@ -114,6 +121,12 @@
     flex-direction: column;
     align-content: flex-end;
     margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .amenities__booking {
+        padding-right: 114px;
     }
 }
 
