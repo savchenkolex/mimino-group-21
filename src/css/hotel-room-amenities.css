@@ -1,15 +1,26 @@
-.container-amenities {
-    min-width: 320px;
-    max-width: 414px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-/* Дописати медіа */
+.hotel-room-amenities{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #FFFDEE;
 }
 
+@media screen and (min-width:1024px) {
+    .hotel-room-amenities{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .hotel-room-amenities {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+}
+
+
 .amenities__title{
+    margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
@@ -20,6 +31,7 @@
 }
 
 .amenities__text{
+    margin-bottom: 0px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -30,9 +42,30 @@
     color: #7A7A7A;
 }
 
-/* Дописати клас */
+@media screen and (min-width:1024px) {
+    .amenities__text {
+        width: 757px;
+    }
+}
+
+.amenities__set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.amenities__item{
+    margin-bottom: 32px;
+}
+@media screen and (min-width:1024px) {
+    .amenities__item:last-child {
+        margin-bottom: 0px;
+    }
+}
 
 .amenities__item-title{
+    margin-bottom: 16px;
+
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -42,7 +75,14 @@
     color: #000000;
 }
 
+@media screen and (min-width:1024px) {
+    .amenities__text-box {
+        display: flex;
+    }
+}
+
 .amenities__item-text{
+   
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -52,3 +92,130 @@
     
     color: #7A7A7A;
 }
+@media screen and (min-width:1024px) {
+    .amenities__item-text{
+     width: 400px;
+     margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__item-text:not(:last-child) {
+      margin-right: 80px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+.amenities__item-text:not(:last-child) {
+    margin-right: 159px;
+}
+}
+
+.amenities__booking{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__booking {
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .amenities__booking {
+        padding-right: 114px;
+    }
+}
+
+.amenities__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 384px;
+    height: 64px;
+    padding: 20px 43px;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid;
+    border-color: #F3C653;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__button {
+    font-size: 24px;
+    line-height: 1.21;
+    width: 434px;
+    height: 64px;
+    padding: 18px 38px;
+    }
+}
+
+.amenities__button:hover,
+.amenities__button:focus {
+  background-color:#F3C653;
+  border-color:#F3C653;
+  color: #000000;
+}
+
+.amenities__link{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #C79002;
+    transition: color 250ms var(--timing-function);
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__link{
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+}
+
+.amenities__link-text{
+    margin-right: 12px;
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__link-text {
+        margin-right: 16px;
+    }
+}
+
+.amenities__icon{
+    fill: #C79002;
+    transition: fill 250ms var(--timing-function);
+}
+
+.amenities__link:hover,
+.amenities__link:focus{
+    color: #F3C653;
+}
+
+.amenities__link:hover .amenities__icon,
+.amenities__link:focus .amenities__icon{
+   fill: #F3C653;
+}
+
+
