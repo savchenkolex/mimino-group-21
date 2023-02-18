@@ -9,6 +9,43 @@
     padding-top: 50px;
     padding-bottom: 40px;
     }
+    .amenities__text {
+    width: 757px;
+    }
+    .amenities__item:last-child {
+    margin-bottom: 0px;
+    }
+    .amenities__text-box {
+    display: flex;
+    }
+    .amenities__item-text {
+    width: 400px;
+    margin-bottom: 0px;
+    }
+    .amenities__item-text:not(:last-child) {
+    margin-right: 80px;
+    }
+    .amenities__booking {
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 40px;
+    }
+    .amenities__button {
+    font-size: 24px;
+    line-height: 1.21;
+    width: 434px;
+    height: 64px;
+    padding: 18px 38px;
+    }
+    .amenities__link {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+    .amenities__link-text {
+    margin-right: 16px;
+    }
+
 }
 
 @media screen and (min-width:1280px) {
@@ -16,8 +53,13 @@
     padding-top: 48px;
     padding-bottom: 48px;
     }
+    .amenities__item-text:not(:last-child) {
+    margin-right: 159px;
+    }
+    .amenities__booking {
+    padding-right: 114px;
+    }
 }
-
 
 .amenities__title{
     margin-bottom: 16px;
@@ -42,12 +84,6 @@
     color: #7A7A7A;
 }
 
-@media screen and (min-width:1024px) {
-    .amenities__text {
-        width: 757px;
-    }
-}
-
 .amenities__set {
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +92,6 @@
 
 .amenities__item{
     margin-bottom: 32px;
-}
-@media screen and (min-width:1024px) {
-    .amenities__item:last-child {
-        margin-bottom: 0px;
-    }
 }
 
 .amenities__item-title{
@@ -75,12 +106,6 @@
     color: #000000;
 }
 
-@media screen and (min-width:1024px) {
-    .amenities__text-box {
-        display: flex;
-    }
-}
-
 .amenities__item-text{
    
     font-family: 'Montserrat';
@@ -92,43 +117,11 @@
     
     color: #7A7A7A;
 }
-@media screen and (min-width:1024px) {
-    .amenities__item-text{
-     width: 400px;
-     margin-bottom: 0px;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .amenities__item-text:not(:last-child) {
-      margin-right: 80px;
-    }
-}
-
-@media screen and (min-width:1280px) {
-.amenities__item-text:not(:last-child) {
-    margin-right: 159px;
-}
-}
 
 .amenities__booking{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@media screen and (min-width:1024px) {
-    .amenities__booking {
-    flex-direction: column;
-    align-content: flex-end;
-    margin-top: 40px;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .amenities__booking {
-        padding-right: 114px;
-    }
 }
 
 .amenities__button{
@@ -155,16 +148,6 @@
     border-color 250ms var(--timing-function);
 }
 
-@media screen and (min-width:1024px) {
-    .amenities__button {
-    font-size: 24px;
-    line-height: 1.21;
-    width: 434px;
-    height: 64px;
-    padding: 18px 38px;
-    }
-}
-
 .amenities__button:hover,
 .amenities__button:focus {
   background-color:#F3C653;
@@ -184,23 +167,8 @@
     color: #C79002;
     transition: color 250ms var(--timing-function);
 }
-
-@media screen and (min-width:1024px) {
-    .amenities__link{
-    margin-top: 32px;
-    font-size: 20px;
-    line-height: 1.2;
-    }
-}
-
 .amenities__link-text{
     margin-right: 12px;
-}
-
-@media screen and (min-width:1024px) {
-    .amenities__link-text {
-        margin-right: 16px;
-    }
 }
 
 .amenities__icon{
