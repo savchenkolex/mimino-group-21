@@ -28,23 +28,43 @@
       />
       <span class="modal-label-text">Номер телефону</span>
     </label>
-    <label class="modal-label">
-      <select name="number-persons" class="modal-select">
-        <option value="1">1</option>
-        <option value="2" selected>2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">2</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="1">1</li>
+          <li class="dropdown-list-item" data-value="2">2</li>
+          <li class="dropdown-list-item" data-value="3">3</li>
+          <li class="dropdown-list-item" data-value="4">4</li>
+        </ul>
+        <input
+          type="text"
+          name="number-persons"
+          value=""
+          class="dropdown-input-hidden"
+        />
+      </div>
       <span class="modal-label-text">Столик на яку кількість осіб?</span>
-    </label>
-    <label class="modal-label">
-      <select name="date-arrival" class="modal-select">
-        <option value="today" selected>Сьогодні</option>
-        <option value="tomorrow">Завтра</option>
-        <option value="week-later">Через неділю</option>
-      </select>
+    </div>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Сьогодні</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+          <li class="dropdown-list-item" data-value="week-later">
+            Через неділю
+          </li>
+        </ul>
+        <input
+          type="text"
+          name="date-arrival"
+          value=""
+          class="dropdown-input-hidden"
+        />
+      </div>
       <span class="modal-label-text">На яку дату бронювати?</span>
-    </label>
+    </div>
     <button type="submit" class="modal-submit buttons">
       ОФОРМИТИ БРОНЮВАННЯ
     </button>
