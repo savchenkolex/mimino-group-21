@@ -4,8 +4,6 @@
     padding: 32px 15px;
     margin-left: auto;
     margin-right: auto;
-
-/* Дописати медіа */
 }
 
 .amenities__title{
@@ -65,6 +63,13 @@
     color: #7A7A7A;
 }
 
+.amenities__booking{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .amenities__button{
     font-family: 'Montserrat';
     font-weight: 500;
@@ -77,22 +82,27 @@
     padding: 20px 43px;
     gap: 10px;
     margin: 0;
-    background: #000000;
-    border: 1px solid #F3C653;
+    background-color: #000000;
+    border: 1px solid;
+    border-color: #F3C653;
     border-radius: 25px;
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 
-.amenities__booking{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
+.amenities__button:hover,
+.amenities__button:focus {
+  background-color: #ffffff;
+  border-color: #f3c653;
+  color: #f3c653;
 }
+
 .amenities__link{
+    display: flex;
     margin-top: 20px;
     margin-right: 12.75px;
     font-family: 'Montserrat';
@@ -101,9 +111,14 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #C79002;
+    background-color: #FFFDEE;
 }
 
 .amenities__icon{
-    background-color: blueviolet;
+    position: absolute;
+    right: 10%;
+    top:80%;
+    fill: #C79002;
 }
+
 
