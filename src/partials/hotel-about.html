@@ -10,12 +10,23 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <img
+    <picture>
+      <source srcset="img/m-main-room.jpg 1x,
+      src/img/m-main-room-2x.jpg 2x"
+      media="(min-width: 320px)">
+      <source srcset="src/img/t-main-room.jpg 1x,
+      img/t-main-room-2x.jpg 2x"
+      media="(min-width: 1024px)">
+      <source srcset="img/d-main-hotel-room.jpg 1x,
+      src/img/d-main-hotel-room-2x.jpg 2x"
+      media="(min-width: 1280px)">
+      <img
       class="about-hotel-pic1"
       src="img/d-main-hotel-room.jpg"
       alt="Room with grey walls and big bed"
       width="460"
     />
+    </picture>
     <div class="bottom-wrap">
       <p class="hotel-discription-bottom">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
