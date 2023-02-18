@@ -9,6 +9,7 @@
     padding-top: 50px;
     padding-bottom: 40px;
     }
+}
 
 @media screen and (min-width:1280px) {
     .hotel-room-amenities {
@@ -16,7 +17,7 @@
     padding-bottom: 48px;
     }
 }
-}
+
 
 .amenities__title{
     margin-bottom: 16px;
@@ -102,11 +103,11 @@
     .amenities__item-text:not(:last-child) {
       margin-right: 80px;
     }
+}
 
 @media screen and (min-width:1280px) {
 .amenities__item-text:not(:last-child) {
     margin-right: 159px;
-}
 }
 }
 
