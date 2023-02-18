@@ -1,6 +1,7 @@
 @media  screen and (min-width: 414px) {
-    
+
 .about-kitchen{
+    background: #FFFDEE;
     padding-top: 16px;
     padding-bottom: 20px;
 }
@@ -23,7 +24,9 @@ color: #494848;
 }
 .div-two{
     width: 258px;
+    margin-bottom: 28px;
 }
+/*  */
 .top-paragr {
 
     display: block;
@@ -44,4 +47,42 @@ letter-spacing: 0.02em;
 color: #7A7A7A;
 
 }
+img{
+border-radius: 2px;
+box-shadow: 0px 0px 84px -12px rgba(0,0,0,0.67);
+
+}
+.images-div{
+    display: flex;
+    justify-content: flex-end;
+}
+.meet-and-paragr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+.about-meet{
+    margin-left: auto;
+    max-width: 168px;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+/* Brown */
+
+color: #C79002;
+
+}
+.restourant-list{
+    display: flex;
+}
+.arrow-swiper{
+    display: flex;
+    justify-content: flex-end;
+}
+
 }
