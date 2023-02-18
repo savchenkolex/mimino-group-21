@@ -56,11 +56,28 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 32px;
+}
+@media screen and (min-width:1024px) {
+    .amenities__set {
+        padding-right: 97px;
    
+    }
 }
 
 .amenities__item{
     margin-bottom: 32px;
+}
+
+/* @media screen and (min-width:1024px) {
+    .amenities__item {
+        width: 400px;
+    }
+} */
+
+@media screen and (min-width:1024px) {
+    .amenities__text-box {
+       display: flex;
+    }
 }
 
 .amenities__item-title{
@@ -86,6 +103,13 @@
     
     color: #7A7A7A;
 }
+/* @media screen and (min-width:1024px) {
+    .amenities__text-box{
+   
+      
+    }
+} */
+
 
 .amenities__booking{
     display: flex;
@@ -154,8 +178,22 @@
     transition: color 250ms var(--timing-function);
 }
 
+@media screen and (min-width:1024px) {
+    .amenities__link{
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+}
+
 .amenities__link-text{
     margin-right: 12px;
+}
+
+@media screen and (min-width:1024px) {
+    .amenities__link-text {
+        margin-right: 16px;
+    }
 }
 
 .amenities__icon{
