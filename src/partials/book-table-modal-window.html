@@ -13,7 +13,7 @@
         class="modal-input username"
         placeholder="Ваше ім’я"
         required
-        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        pattern="^[a-zA-Z-Яа-яЁёІіЇїЄє]+\s[a-zA-Z-Яа-яЁёІіЇїЄє]+${2,20}"
       />
       <span class="modal-label-text">На кого забронювати номер?</span>
     </label>
@@ -42,6 +42,7 @@
           name="number-persons"
           value=""
           class="dropdown-input-hidden"
+          required
         />
       </div>
       <span class="modal-label-text">Столик на яку кількість осіб?</span>
@@ -61,6 +62,7 @@
           name="date-arrival"
           value=""
           class="dropdown-input-hidden"
+          required
         />
       </div>
       <span class="modal-label-text">На яку дату бронювати?</span>
