@@ -1,0 +1,47 @@
+@media  screen and (min-width: 414px) {
+    
+.about-kitchen{
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+.headlines-mimino{
+    margin-bottom: 12px;
+    font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.075;
+/* identical to box height */
+
+letter-spacing: 0.3em;
+
+color: #494848;
+}
+.div-one{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.div-two{
+    width: 258px;
+}
+.top-paragr {
+
+    display: block;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+.paragr-about-restourant{
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+color: #7A7A7A;
+
+}
+}
