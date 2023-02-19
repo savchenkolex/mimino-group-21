@@ -64,7 +64,7 @@ margin-left: auto;
 
 .room-hero__title{
 margin-bottom: 14px;
-font-family: 'Times New Roman';
+font-family: 'Times New Roman Bold';
 font-weight: 700;
 font-size: 28px;
 line-height: 1.14;
@@ -73,25 +73,8 @@ color: #FFFFFF;
 width: 325px;
 }
 
-@media screen and (min-width: 1024px) {
-    .room-hero__header {
-    height: 116px;
-    }
-    .hero {
-    padding-top: 450px;
-    padding-bottom: 22px;
-    }
-    .room-hero__title{
-    margin-bottom: 24px;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.05em;
-    width: 507px;
-    }
-}
-
 .room-hero__text{
-font-family: 'Montserrat';
+font-family: 'Montserrat Bold';
 font-weight: 700;
 font-size: 12px;
 line-height: 1.25;
@@ -100,24 +83,10 @@ color: #FFFFFF;
 width: 325px;
 margin-bottom: 0px;
 }
-@media screen and (min-width:1024px) {
-    .room-hero__text{
-        font-size: 16px;
-        width: 400px;
-        }
-        .room-hero__nav{
-            justify-content: space-between;
-        }
-
-}
-
 
 .room-hero__nav{
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
+display: flex;
 }
-
 
 .room-hero__networks{
     margin-right: 70px;
@@ -136,30 +105,17 @@ margin-bottom: 0px;
     display: none;
 }
 
-@media screen and (min-width:1024px) {
-.room-hero__map{
-position: relative;
-display: flex;
-flex-direction: row-reverse;
 
-font-family: 'Montserrat';
-font-style: normal;
+
+.room-hero__map-text{
+font-family: 'Montserrat Regular';
 font-weight: 400;
 font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.01em;
 color: #E5E5E5;
-width:285px;border: 1px solid rgba(243, 198, 83, 0.7);
-border-radius: 2px;
-}
-}
-
-.room-hero__map-text{
 width: 233px;
-padding-top: 8px;
-padding-right: 8px;
-padding-bottom: 8px;
-
+height: 40px;
 }
 
 .room-hero__map-icon{
@@ -173,7 +129,7 @@ padding-bottom: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Bold';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
@@ -181,8 +137,6 @@ padding-bottom: 8px;
     color: #F3C653;
     width: 232px;
     height: 48px;
-    padding: 14px 35px;
-    margin: 0;
     background-color:rgba(0, 0, 0, 0.4);
     border: 2px solid;
     border-color: #FFFFFF;
@@ -194,9 +148,79 @@ padding-bottom: 8px;
 }
 
 
+
 .room-hero__buttton:hover,
 .room-hero__buttton:focus {
   background-color:#ffffff;
   border-color:#F3C653;
 }
 
+
+@media screen and (min-width: 1024px) {
+    .room-hero__header {
+    height: 116px;
+    }
+    .hero {
+    padding-top: 450px;
+    padding-bottom: 22px;
+    }
+    .room-hero__title{
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    width: 507px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .room-hero__text{
+    font-size: 16px;
+    width: 400px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+    .room-hero__nav{
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+    
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+    .room-hero__networks{
+     margin-top: 42px;
+      position: relative;
+      display: flex;
+      margin-bottom: 0px;
+      margin-right: 0px;
+    }
+
+    .room-hero__items:not(:last-child){
+        margin-right: 20px;
+}  
+  }
+
+  @media screen and (min-width:1024px) {
+    .room-hero__map{
+    margin-right: 40px;
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width:285px;
+    align-items: center;
+    
+    
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    }
+    }
+
+    @media screen and (min-width:1024px) {
+        .room-hero__buttton{
+            margin: 0px 0px 0px auto;
+    }
+    }
