@@ -406,6 +406,11 @@
   .first {
     order: 1;
   }
+
+  .modal-label.price {
+    width: calc((100% - 16px) / 2);
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
