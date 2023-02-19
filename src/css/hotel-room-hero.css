@@ -13,7 +13,7 @@
 }
 
 .room-hero__overlay{
-margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -86,6 +86,8 @@ margin-bottom: 0px;
 
 .room-hero__nav{
 display: flex;
+align-items: center;
+margin-top: 16px;
 }
 
 .room-hero__networks{
@@ -105,8 +107,6 @@ display: flex;
     display: none;
 }
 
-
-
 .room-hero__map-text{
 font-family: 'Montserrat Regular';
 font-weight: 400;
@@ -123,7 +123,6 @@ height: 40px;
     top:25%;
     left:16px;
 }
-
 
 .room-hero__buttton{
     display: flex;
@@ -147,8 +146,6 @@ height: 40px;
     border-color 250ms var(--timing-function);
 }
 
-
-
 .room-hero__buttton:hover,
 .room-hero__buttton:focus {
   background-color:#ffffff;
@@ -169,27 +166,16 @@ height: 40px;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.05em;
-    width: 507px;
+    width: 510px;
     }
-}
-
-@media screen and (min-width:1024px) {
     .room-hero__text{
     font-size: 16px;
     width: 400px;
     }
-}
-
-@media screen and (min-width: 414px) and (max-width: 1023px) {
     .room-hero__nav{
-        margin-top: 16px;
-        display: flex;
-        align-items: center;
-    
+        margin-top: 0px;
+        align-items: normal;
     }
-  }
-
-  @media screen and (min-width:1024px) {
     .room-hero__networks{
      margin-top: 42px;
       position: relative;
@@ -197,13 +183,9 @@ height: 40px;
       margin-bottom: 0px;
       margin-right: 0px;
     }
-
     .room-hero__items:not(:last-child){
         margin-right: 20px;
-}  
-  }
-
-  @media screen and (min-width:1024px) {
+    }  
     .room-hero__map{
     margin-right: 40px;
     margin-top: 24px;
@@ -212,15 +194,37 @@ height: 40px;
     flex-direction: row-reverse;
     width:285px;
     align-items: center;
-    
-    
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     }
+    .room-hero__buttton{
+    margin: 0px 0px 0px auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-hero__container{
+    position: relative;
     }
 
-    @media screen and (min-width:1024px) {
-        .room-hero__buttton{
-            margin: 0px 0px 0px auto;
+    .hero{
+    padding-top: 524px;
+    padding-bottom: 48px;
+    }
+
+    .room-hero__map{
+    display:none;
+     }
+    .room-hero__networks{
+    display:none
+    }
+    .room-hero__nav{
+      position: absolute;
+      right: 85px;
+      top: 80px;
+    
+    }
+    .room-hero__title{
+    font-size: 36px;
     }
     }
