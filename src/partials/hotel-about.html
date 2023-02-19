@@ -11,21 +11,24 @@
       </p>
     </div>
     <picture>
-      <source srcset="img/m-main-room.jpg 1x,
-      src/img/m-main-room-2x.jpg 2x"
-      media="(min-width: 320px)">
-      <source srcset="src/img/t-main-room.jpg 1x,
-      img/t-main-room-2x.jpg 2x"
-      media="(min-width: 1024px)">
-      <source srcset="img/d-main-hotel-room.jpg 1x,
-      src/img/d-main-hotel-room-2x.jpg 2x"
-      media="(min-width: 1280px)">
+      <source
+        srcset="img/m-main-room.jpg 1x, img/m-main-room-2x.jpg 2x"
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="img/t-main-room.jpg 1x, img/t-main-room-2x.jpg 2x"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="img/d-main-hotel-room.jpg 1x, img/d-main-hotel-room-2x.jpg 2x"
+        media="(min-width: 1280px)"
+      />
       <img
-      class="about-hotel-pic1"
-      src="img/d-main-hotel-room.jpg"
-      alt="Room with grey walls and big bed"
-      width="460"
-    />
+        class="about-hotel-pic1"
+        src="img/d-main-hotel-room.jpg"
+        alt="Room with grey walls and big bed"
+        width="244"
+      />
     </picture>
     <div class="bottom-wrap">
       <p class="hotel-discription-bottom">
@@ -33,38 +36,96 @@
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <img
-        class="about-hotel-pic2"
-        src="img/d-main-hotel-lobby.jpg"
-        alt="Lobby of the hotel"
-        width="460"
-      />
+      <picture>
+        <source
+          srcset="img/m-lobby.jpg 1x, img/m-lobby-2x.jpg 2x"
+          media="(min-width: 320px)"
+        />
+        <source
+          srcset="img/t-lobby.jpg 1x, img/t-lobby-2x.jpg 2x"
+          media="(min-width: 1024px)"
+        />
+        <source
+          src="img/d-main-hotel-lobby.jpg 1x,
+        img/d-main-hotel-lobby-2x.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="about-hotel-pic2"
+          src="img/m-lobby.jpg"
+          alt="Lobby of the hotel"
+          width="360"
+        />
+      </picture>
     </div>
     <div class="main-slider-wrap">
-      <img
-        class="main-hotel-slider1"
-        src="img/d-white-towel-bed-decoration-bedroom-interior.jpeg"
-        alt="Registration"
-        width="254"
-      />
-      <img
-        class="main-hotel-slider2"
-        src="img/d-hotel-registration.jpeg"
-        alt="towels"
-        width="254"
-      />
+      <ul class="main-about-slider">
+        <li class="">
+          <picture>
+            <source
+              srcset="img/m-main-sink.jpg 1x, img/m-main-sink-2x.jpg 2x"
+              media="(min-width: 320px)"
+            />
+            <source
+              srcset="img/t-main-sink.jpg 1x, img/t-main-sink-2x.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="img/d-main-sink.jpg 1x, img/d-main-sink-2x.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="main-hotel-slider1"
+              src="img/d-white-towel-bed-decoration-bedroom-interior.jpeg"
+              alt="Registration"
+              width="254"
+            />
+          </picture>
+        </li>
+        <li class="main-slider-r">
+          <picture>
+            <source
+              srcset="img/m-main-reg.jpg 1x, img/m-main-reg-2x.jpg 2x"
+              media="(min-width: 320px)"
+            />
+            <source
+              srcset="img/t-main-reg.jpg 1x, img/t-main-reg-2x.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                img/d-hotel-registration.jpeg    1x,
+                img/d-hotel-registration-2x.jpeg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="main-hotel-slider2"
+              src="img/d-hotel-registration.jpeg"
+              alt="towels"
+              width="254"
+            />
+          </picture>
+        </li>
+      </ul>
     </div>
     <div class="main-button-wrap">
-      <button class="slider-button-l" type="button">
-        <svg width="29.91" height="16.83">
-          <use href="img/icons.svg#cil_arrow-left-black"></use>
-        </svg>
-      </button>
-      <button class="slider-button-r" type="button">
-        <svg width="29.91" height="16.83">
-          <use href="img/icons.svg#cil_arrow-right-black"></use>
-        </svg>
-      </button>
+      <ul class="main-button-list">
+        <li class="main-button-item">
+          <button class="slider-button-l" type="button">
+            <svg width="32" height="32">
+              <use href="img/icons.svg#cil_arrow-left-black"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="main-button-item">
+          <button class="slider-button-r" type="button">
+            <svg width="32" height="32">
+              <use href="img/icons.svg#cil_arrow-right-black"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
