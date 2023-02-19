@@ -48,7 +48,7 @@
   color: #b4b4b4;
 }
 .hotel.logo_text {
-  font-family: 'Film P3';
+  font-family: 'FilmP3Bold';
   font-weight: 700;
   font-size: 40px;
   line-height: 43px;
@@ -57,7 +57,7 @@
   color: #494848;
 }
 .hotel-section-section_text {
-  font-family: 'Times New Roman';
+  font-family: 'Times New Roman Bold';
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -65,7 +65,7 @@
   color: #000000;
 }
 .hotel-section-p_text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat SemiBold';
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
