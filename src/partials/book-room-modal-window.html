@@ -1,61 +1,93 @@
-<div class="modal" data-modal="1" >
-  <div class="" >
-    <button class="modal__cross js-modal-close">
-      <svg class="modal-icon" width="24" height="24">
-        <use href="./img/icons.svg#x"></use>
-      </svg>
-    </button>
-    <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
-    <form class="modal-form">
-      <label class="modal-label">
+<div class="modal" data-modal="1">
+  <button class="modal-close buttons js-modal-close">
+    <svg class="modal-icon" width="24" height="24">
+      <use href="./img/icons.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-input username"
+        placeholder="Ваше ім’я"
+        required
+        pattern="^[a-zA-Z-Яа-яЁёІіЇїЄє]+\s[a-zA-Z-Яа-яЁёІіЇїЄє]+${2,20}"
+      />
+      <span class="modal-label-text">На кого забронювати номер?</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="tel"
+        name="phone"
+        class="modal-input phone"
+        placeholder="+38 (___) ___-__-__"
+        required
+        pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+      />
+      <span class="modal-label-text">Номер телефону</span>
+    </label>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Двомісний люкс</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="2">Двомісний</li>
+          <li class="dropdown-list-item" data-value="2L">Двомісний люкс</li>
+          <li class="dropdown-list-item" data-value="3">Трьохмісний</li>
+        </ul>
         <input
           type="text"
-          name="user-name"
-          class="modal-input username"
-          placeholder="Ваше ім’я"
+          name="select-room"
+          value=""
+          class="dropdown-input-hidden"
           required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
         />
-        <span class="modal-label-text">На кого забронювати номер?</span>
-      </label>
-      <label class="modal-label">
+      </div>
+      <span class="modal-label-text">Категорія номеру</span>
+    </div>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Сьогодні</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+          <li class="dropdown-list-item" data-value="week-later">
+            Через неділю
+          </li>
+        </ul>
         <input
-          type="tel"
-          name="phone"
-          class="modal-input phone"
-          placeholder="+38 (___) ___-__-__"
+          type="text"
+          name="select-date-arrival"
+          value=""
+          class="dropdown-input-hidden"
           required
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
         />
-        <span class="modal-label-text">Номер телефону</span>
-      </label>
-      <label class="modal-label">
-        <select name="room" class="modal-select">
-          <option value="2">Двомісний</option>
-          <option value="2L" selected>Двомісний люкс</option>
-          <option value="3">Трьохмісний</option>
-        </select>
-        <span class="modal-label-text">Категорія номеру</span>
-      </label>
-      <label class="modal-label">
-        <select name="date-arrival" class="modal-select">
-          <option value="today" selected>Сьогодні</option>
-          <option value="tomorrow">Завтра</option>
-          <option value="week-later">Через неділю</option>
-        </select>
-        <span class="modal-label-text">Дата заїзду</span>
-      </label>
-      <label class="modal-label">
-        <select name="date-departure" class="modal-select">
-          <option value="today" selected>Сьогодні</option>
-          <option value="tomorrow">Завтра</option>
-          <option value="week-later">Через неділю</option>
-        </select>
-        <span class="modal-label-text">Дата виїзду</span>
-      </label>
-      <button type="submit" class="modal-submit buttons">
-        ОФОРМИТИ БРОНЮВАННЯ
-      </button>
-    </form>
-  </div>
+      </div>
+      <span class="modal-label-text">Дата заїзду</span>
+    </div>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Сьогодні</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+          <li class="dropdown-list-item" data-value="week-later">
+            Через неділю
+          </li>
+        </ul>
+        <input
+          type="text"
+          name="select-date-departure"
+          value=""
+          class="dropdown-input-hidden"
+          required
+        />
+      </div>
+      <span class="modal-label-text">Дата виїзду</span>
+    </div>
+    <button type="submit" class="modal-submit buttons">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </form>
 </div>

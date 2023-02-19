@@ -1,12 +1,26 @@
 /**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
+|============================
+| include css partials with
+| default @import url()
+|============================
 */
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./modal-window.css');
 @import url('./hotel.css');
+@import url('./restaurant-menu.css');
+@import url('./hotel-room-amenities.css');
+@import url('./about-restaurant.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+@import url('./hero.css');
+@import url('./hotel-about.css');
+@import url('./hotel-details.css');
+@import url('./hotel-room-hero.css');
+@import url('./restaurant-about.css');
+@import url('./restaurant-details.css');
+@import url('./restaurant-hero.css');
+@import url('./restaurant-kitchen.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -16,6 +30,13 @@
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --fon-lemon: #FFFDEE;
+  --akzent-yellow: #F3C653;
+  --fon-dark-lemon: #F0ECD6;
+  --brown: #C79002;
+  --color-footer: #0E0C07;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,65 +45,70 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@font-face {
-  font-family: "Film P3";
-  src: url("../fonts/FilmP3.ttf");
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
-@font-face {
-  font-family: "FilmP3Bold";
-  src: url("../fonts/FilmP3Bold.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3Light";
-  src: url("../fonts/FilmP3Light.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3NarrowBold";
-  src: url("../fonts/FilmP3NarrowBold.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3NarrowLight" ;
-  src: url("../fonts/FilmP3NarrowLight.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3Narrow.ttf";
-  src: url("../fonts/FilmP3Narrow.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3WideBold" ;
-  src: url("../fonts/FilmP3WideBold.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3WideLight" ;
-  src: url("../fonts/FilmP3WideLight.ttf");
-}
-
-@font-face {
-  font-family: "FilmP3Wide" ;
-  src: url("../fonts/FilmP3Wide.ttf");
-}
-
 @media screen and (min-width: 414px) {
-  .container { 
+  .container {
     width: 414px;
+    padding: 0 15px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     width: 1024px;
+    padding: 0 47px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding: 0 85px;
   }
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
+  font-family: "FilmP3Bold";
+  letter-spacing: 0.3em;
+}
+
+.logo-title {
+
+}
+
+.logo-link {
+
+}
+
+.logo-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  
+}
+
+.logo-light {
+color: white;
+
+}
+
+.logo-dark {
+color: #494848;
+}
+

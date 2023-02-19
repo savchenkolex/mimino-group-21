@@ -1,0 +1,145 @@
+.main-about-hotel {
+  background-color: #fffdee;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 28px;
+}
+
+.main-about-hotel > .container {
+  overflow: hidden;
+}
+
+.main-about-hotel > .container img {
+  border-radius: 2px;
+}
+
+.discription-wrap {
+  margin-left: auto;
+  margin-bottom: 28px;
+}
+
+.hotel-description {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: end;
+  margin-bottom: 6px;
+
+  color: #b4b4b4;
+}
+
+.hotel-title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  text-align: end;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+
+  color: #494848;
+}
+
+.hotel-description-top {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  width: 242px;
+  margin-left: auto;
+
+  color: #7a7a7a;
+}
+
+.about-hotel-pic1 {
+  margin-bottom: 32px;
+}
+
+.bottom-wrap {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.hotel-discription-bottom {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  /* width: 95px; */
+
+  color: #c79002;
+  padding-top: 15px;
+}
+
+.about-hotel-pic2 {
+  margin-left: auto;
+}
+
+.main-slider-wrap {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.main-hotel-slider1 {
+  position: absolute;
+  left: -238px;
+}
+
+.main-hotel-slider2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-button-wrap > button {
+  border: none;
+  background-color: transparent;
+  height: 16px;
+}
+
+.slider-button-r {
+  margin-left: 34px;
+}
+
+@media screen and (min-width: 414px) {
+  .main-about-hotel > .container {
+    padding: 0 15px;
+  }
+
+  .hotel-discription-bottom {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    width: 163px;
+
+    color: #c79002;
+
+    padding-top: 70px;
+  }
+
+  .main-hotel-slider1 {
+    position: absolute;
+    left: -180px;
+    width: 245px;
+    height: 245px;
+  }
+
+  .main-hotel-slider2 {
+    margin-left: auto;
+    margin-right: 50px;
+    width: 245px;
+    height: 245px;
+  }
+}
+
+.main-button-wrap {
+}

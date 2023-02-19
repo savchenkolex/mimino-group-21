@@ -1,35 +1,33 @@
-.backdrop {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 20;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 
   width: 100%;
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
 
-  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.hidden,
-.hidden-two {
-  display: none;
-}
-
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  z-index: 30;
 
-  width: 414px;
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 414px;
   padding: 15px 15px 60px;
   border-radius: 2px;
 
@@ -37,11 +35,21 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+.modal.price {
+  display: none;
+}
+
+.overlay.active {
+  pointer-events: auto;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .buttons {
@@ -101,9 +109,118 @@
   flex-direction: column;
 }
 
-.modal-input,
 .modal-select {
   margin-bottom: 8px;
+}
+
+.modal-select {
+  appearance: none;
+  height: 54px;
+  padding-left: 12px;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: #808080;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 54px;
+
+  padding: 0;
+  padding-left: 12px;
+  border: 1px solid #c79002;
+  border-radius: 2px;
+
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+  color: #808080;
+  background-color: #fffdee;
+}
+
+.dropdown-button:focus,
+.dropdown-button--active {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px rgba(199, 144, 2, 0.1);
+}
+
+.dropdown-button::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../img/arrow-down-bold.svg');
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+}
+
+.dropdown-input-hidden {
+  display: none;
+}
+
+.dropdown-list {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  top: 54px;
+  left: 0;
+
+  width: 100%;
+  border-radius: 2px;
+
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+  color: #808080;
+  background-color: #fffdee;
+
+  overflow: hidden;
+}
+
+.dropdown-list--visible {
+  display: block;
+}
+
+.dropdown-list-item {
+  height: 54px;
+  padding-top: 16px;
+  padding-left: 12px;
+  border: 1px solid #c79002;
+  border-top: 0;
+
+  cursor: pointer;
+}
+
+.dropdown-list-item:hover {
+  background: #f3c653;
 }
 
 .modal-input {
@@ -114,6 +231,14 @@
   border-radius: 2px;
 
   background-color: transparent;
+  outline: none;
+
+  transition: border-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-width: 2px;
 }
 
 .modal-input::placeholder {
@@ -127,6 +252,9 @@
 }
 
 .modal-label-text {
+  padding-left: 12px;
+  margin-top: 8px;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -150,96 +278,15 @@
 
   color: #ffffff;
   background-color: #000000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Далі йдуть стилі з універсального скрипту для модалки
-який рекомендував ментор. Звідси:
-https://codepen.io/dan_postnov/pen/gjBqPb
-
-До потрібних елементів треба додати клас class="js-open-modal"
-і атрибут data-modal="1" 
-Цифри змінюються
- */
-
-/* Стили для подложки */
-
-.overlay {
-   
-  /* Скрываем подложку  */
-  opacity: 0;
-  visibility: hidden;
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .5);
-  z-index: 20;
-  transition: .3s all;
-}
-
-
-/* Стили для модальных окон */
-
-.modal {
-  
-  /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
-  
-  
-  /*  Установаем ширину окна  */
-  width: 100%;
-  max-width: 500px;
-  
-  /*  Центрируем и задаем z-index */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-  
-  /*  Побочные стили   */
-  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-  text-align: center;
-  padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: 0.3s all;
-}
-
-
-/* Стили для активных классов подложки и окна */
-
-.modal.active,
-.overlay.active{
-  opacity: 1;
-  visibility: visible;
-}
-
-
-/* Стили для кнопки закрытия */
-
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
-}
-
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-a {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
+.modal-submit:hover,
+.modal-submit:focus {
+  color: #000000;
+  background-color: #f3c653;
+  border-color: #f3c653;
 }

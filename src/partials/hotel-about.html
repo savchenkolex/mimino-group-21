@@ -1,17 +1,70 @@
 <section class="main-about-hotel">
-    <h3 class="container">About our hotel</h3>
-    <img src="../img/" alt="Room with grey walls and big bed" width="460"/>
-    <p class="hotel-description-top">Amet minim mollit non</p>
-    <h3>Міміно</h3>
-    <p>
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-      sint. Velit officia consequat duis enim velit mollit. Exercitation
-      veniam consequat sunt nostrud amet.
-    </p>
-    <p class="hotel-discription-bottom">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-      sint. Velit officia consequat duis enim velit mollit. Exercitation
-      veniam consequat sunt nostrud amet.
-    </p>
-    <img src="" alt="Lobby of the hotel" width="460">
-  </section>
+  <div class="container">
+    <h2 class="visually-hidden">About our hotel</h2>
+    <div class="discription-wrap">
+      <p class="hotel-description">Amet minim mollit non</p>
+      <h3 class="hotel-title">MIMIHO</h3>
+      <p class="hotel-description-top">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <picture>
+      <source srcset="img/m-main-room.jpg 1x,
+      src/img/m-main-room-2x.jpg 2x"
+      media="(min-width: 320px)">
+      <source srcset="src/img/t-main-room.jpg 1x,
+      img/t-main-room-2x.jpg 2x"
+      media="(min-width: 1024px)">
+      <source srcset="img/d-main-hotel-room.jpg 1x,
+      src/img/d-main-hotel-room-2x.jpg 2x"
+      media="(min-width: 1280px)">
+      <img
+      class="about-hotel-pic1"
+      src="img/d-main-hotel-room.jpg"
+      alt="Room with grey walls and big bed"
+      width="460"
+    />
+    </picture>
+    <div class="bottom-wrap">
+      <p class="hotel-discription-bottom">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <img
+        class="about-hotel-pic2"
+        src="img/d-main-hotel-lobby.jpg"
+        alt="Lobby of the hotel"
+        width="460"
+      />
+    </div>
+    <div class="main-slider-wrap">
+      <img
+        class="main-hotel-slider1"
+        src="img/d-white-towel-bed-decoration-bedroom-interior.jpeg"
+        alt="Registration"
+        width="254"
+      />
+      <img
+        class="main-hotel-slider2"
+        src="img/d-hotel-registration.jpeg"
+        alt="towels"
+        width="254"
+      />
+    </div>
+    <div class="main-button-wrap">
+      <button class="slider-button-l" type="button">
+        <svg width="29.91" height="16.83">
+          <use href="img/icons.svg#cil_arrow-left-black"></use>
+        </svg>
+      </button>
+      <button class="slider-button-r" type="button">
+        <svg width="29.91" height="16.83">
+          <use href="img/icons.svg#cil_arrow-right-black"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
