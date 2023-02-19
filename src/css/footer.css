@@ -25,7 +25,7 @@
   display: flex;
 }
 .footer-title {
-  font-family: 'Film P3';
+  font-family: "FilmP3Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -64,6 +64,10 @@
 .soc {
 }
 .soc-item {
+
+  
+}
+.soc-link {
   display: block;
   font-family: 'Montserrat';
   font-weight: 400;
@@ -71,9 +75,6 @@
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: #F3C653;
-  
-}
-.soc-link {
 }
 .icon-header {
 }
@@ -94,9 +95,24 @@
   .foooter-container {
     max-width: 1024px;
   }
+  .foot {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .footer-title {
+    padding-top: 117px;
+    padding-bottom: 118px;
+    padding-left: 154px;
+    margin-right: 163px;
+    font-size: 64px;
+  }
+  .information {
+    display: flex;
+  }
   .soc-list-item {
     display: block;
   }
+
   .networks-list-item {
     display: none;
   }
@@ -105,6 +121,14 @@
 @media screen and (min-width: 1280px) {
   .foooter-container {
     max-width: 1280px;
+  }
+  .footer-title {
+   padding-top: 120px;
+   padding-left: 216px;
+   padding-bottom: 115px; 
+  }
+  .information {
+    display: flex;
   }
   .networks-list-item {
     display: none;
