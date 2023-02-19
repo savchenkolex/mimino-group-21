@@ -1,0 +1,162 @@
+.restaurant-menu {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fffdee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu {
+    background-color: #f0ecd6;
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu {
+    padding-bottom: 60px;
+  }
+}
+
+.restaurant-menu-title {
+  font-family: 'Times New Roman';
+  font-style: Bold;
+  /* не працює */
+  font-size: 28px;
+  line-height: 1.16;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu-column-direct {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+.restaurant-menu-table {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.restaurant-menu-chapter {
+  display: inline-block;
+  font-family: 'Times New Roman';
+  font-style: Bold;
+  /* не працює */
+  font-size: 20px;
+  line-height: 1.16;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu-chapter {
+    margin-bottom: 20px;
+  }
+}
+
+.restaurant-menu-dishes {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu-dishes {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.restaurant-menu-ingredients {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: Regular;
+  /* не працює */
+  max-width: 221px;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.restaurant-menu-width {
+  font-family: 'Montserrat';
+  font-style: light;
+  /* не працює */
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+}
+
+.restaurant-menu-price {
+  font-family: 'Montserrat';
+  font-style: Bold;
+  /* не працює */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+}
+
+.restaurant-menu-drinks {
+  padding-bottom: 11px;
+}
+
+/* .restaurant-menu .button-hotel-room_price {
+    margin-left: auto;
+    margin-right: auto;
+ } */
+/* 
+ @media screen and (min-width: 1024px) {
+    .restaurant-menu .button-hotel-room_price {
+                
+     }
+ } */
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu .button-hotel-room_price {
+    margin-right: 85px;
+  }
+}
+
+.restaurant-menu-button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-menu-button {
+    margin-top: 64px;
+    margin-right: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu-button {
+    margin-top: 51px;
+    margin-right: 85px;
+  }
+}
