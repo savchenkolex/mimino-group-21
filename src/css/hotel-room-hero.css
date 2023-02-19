@@ -1,11 +1,15 @@
-
+/* Hotel room hero Буркова Анна  */
 .room-hero__header{
     height: 143px;
     position: absolute;
+    background: linear-gradient(180deg, #000000 0%,
+     rgba(0, 0, 0, 0.55) 54.17%,
+     rgba(0, 0, 0, 0) 100%);
 }
 
 .hero{
-    padding-top: 143px;
+    padding-top:480px;
+    padding-bottom: 14px;
 }
 
 .room-hero__overlay{
@@ -13,7 +17,6 @@ margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
   background-image:  url("../img/room-hero-mobile.jpg");
   height: 740px;
  
@@ -59,9 +62,47 @@ margin-left: auto;
     }
   }
 
+.room-hero__title{
+margin-bottom: 14px;
+font-family: 'Times New Roman';
+font-weight: 700;
+font-size: 28px;
+line-height: 1.14;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+width: 325px;
+}
 
+.room-hero__text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+width: 325px;
+margin-bottom: 0px;
+}
 
+.room-hero__nav{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.room-hero__networks{
+    margin-right: 70px;
+}
 
+.room-hero__items:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.room-hero__link{
+   display: flex;
+   width: 24px;
+   height: 24px;
+}
 
 .room-hero__buttton{
     display: flex;
@@ -92,3 +133,4 @@ margin-left: auto;
   background-color:#ffffff;
   border-color:#F3C653;
 }
+
