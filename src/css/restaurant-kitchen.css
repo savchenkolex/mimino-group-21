@@ -47,24 +47,26 @@ color: #494848;
 }
 .images-shadow{
     border-radius: 2px;
-    box-shadow: 0px 0px 84px -12px rgba(0,0,0,0.67);    
-    
+    box-shadow: 2px 2px 60px 2px #00000040;
+
     }
     .restourant-list{
         display: flex;
-    }
+        margin-bottom: 20px;
+        justify-content: flex-end;
+        gap: 24px;
+     }
     .arrow-swiper{
+        gap: 34px;
         display: flex;
         justify-content: flex-end;
     }
     /* -----MOBILE MEDIA------ */
     @media  screen and (min-width: 414px) and (max-width: 1023px){
 
-        .containerr {
-            padding: 0 15px;
-          }
+        
     .about-kitchen{
-        background: #FFFDEE;
+        background-color: var(--fon-lemon);
         padding-top: 16px;
         padding-bottom: 20px;
     }
@@ -82,7 +84,7 @@ color: #494848;
 /*-----------MEDIA_TABLET--------------- */
 
 @media  screen and (min-width: 1024px){
-    .about-kitchen > .containerr{
+    .about-kitchen > .container{
         padding-left: 47px;
         padding-right: 60px;
     }
@@ -131,7 +133,8 @@ font-weight: 600;
 font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
-color: #C79002;
+color: var(--brown);
+
 }
 .meet-and-paragr{
     display: flex;
@@ -146,7 +149,6 @@ letter-spacing: 0.02em;
 
 /* Brown */
 
-color: #C79002;
 }
 
 .images-div{
@@ -156,14 +158,33 @@ color: #C79002;
     left: 512px;
 }
 /* ---------------restourant list --------------*/
- .restourant-list{
-    justify-content: flex-end;
+.restourant-list{
+    margin-bottom: 32px;
     gap: 40px;
  }
  /* ------arrow list----------- */
- .arrow-swiper{
-    gap: 34px;
-    display: flex;
-    justify-content: flex-end;
+
 }
+/* ------MEDIA DESKTOP---------- */
+@media  screen and (min-width: 1280px){
+    .images-div{
+        left: 640px;
+    }
+
+    /* -----весь верхний текст------- */
+    .div-two{
+        width: 518px;
+        margin-bottom: 162px;
+    }
+    /* -----желтый цвет напроив мяса------- */
+    .div-about-meet{
+        margin-left: 32px;
+    }
+    .about-kitchen > .container{
+        padding: 0 85px;
+    }
+    /* ------ slider-------- */
+    .restourant-list{
+        margin-bottom: 40px;
+    }
 }
