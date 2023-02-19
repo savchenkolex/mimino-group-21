@@ -101,6 +101,24 @@
   row-gap: 20px;
 }
 
+.form-position {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-position-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-position-dropdown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 .modal-label {
   display: flex;
   flex-direction: column;
@@ -413,5 +431,5 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-}
+/* @media screen and (min-width: 1280px) {
+} */
