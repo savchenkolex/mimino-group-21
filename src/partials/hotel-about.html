@@ -1,54 +1,66 @@
 <section class="main-about-hotel">
   <div class="container">
     <h2 class="visually-hidden">About our hotel</h2>
-    <img
-      class="about-hotel-pic1"
-      src="img/javascript.svg"
-      alt="Room with grey walls and big bed"
-      width="460"
-    />
     <div class="discription-wrap">
       <p class="hotel-description">Amet minim mollit non</p>
-      <h3 class="hotel-title">Міміно</h3>
+      <h3 class="hotel-title">MIMIHO</h3>
       <p class="hotel-description-top">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <p class="hotel-discription-bottom">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <img
-      class="about-hotel-pic2"
-      src="img/javascript.svg"
-      alt="Lobby of the hotel"
+    <picture>
+      <source srcset="img/m-main-room.jpg 1x,
+      src/img/m-main-room-2x.jpg 2x"
+      media="(min-width: 320px)">
+      <source srcset="src/img/t-main-room.jpg 1x,
+      img/t-main-room-2x.jpg 2x"
+      media="(min-width: 1024px)">
+      <source srcset="img/d-main-hotel-room.jpg 1x,
+      src/img/d-main-hotel-room-2x.jpg 2x"
+      media="(min-width: 1280px)">
+      <img
+      class="about-hotel-pic1"
+      src="img/d-main-hotel-room.jpg"
+      alt="Room with grey walls and big bed"
       width="460"
     />
+    </picture>
+    <div class="bottom-wrap">
+      <p class="hotel-discription-bottom">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <img
+        class="about-hotel-pic2"
+        src="img/d-main-hotel-lobby.jpg"
+        alt="Lobby of the hotel"
+        width="460"
+      />
+    </div>
     <div class="main-slider-wrap">
-      <!-- якщо лишати пусті src="./" , то гітхаб-пейджс не може збілдитися. Будь-ласка, більше так не роби -->
       <img
         class="main-hotel-slider1"
-        src="img/javascript.svg"
+        src="img/d-white-towel-bed-decoration-bedroom-interior.jpeg"
         alt="Registration"
         width="254"
       />
       <img
         class="main-hotel-slider2"
-        src="img/javascript.svg"
+        src="img/d-hotel-registration.jpeg"
         alt="towels"
         width="254"
       />
     </div>
     <div class="main-button-wrap">
-      <button class="slider-button-f" type="button">
+      <button class="slider-button-l" type="button">
         <svg width="29.91" height="16.83">
           <use href="img/icons.svg#cil_arrow-left-black"></use>
         </svg>
       </button>
-      <button class="slider-button-s" type="button">
+      <button class="slider-button-r" type="button">
         <svg width="29.91" height="16.83">
           <use href="img/icons.svg#cil_arrow-right-black"></use>
         </svg>
