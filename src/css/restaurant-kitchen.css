@@ -1,8 +1,36 @@
-@media  screen and (min-width: 414px) {
-    
-.about-kitchen{
-    padding-top: 16px;
-    padding-bottom: 20px;
+.top-paragr{ font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+font-size: 20px;
+line-height: 1.15;
+color: #B4B4B4;
+    }
+.meet-and-paragr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* paragraphes about restourant */
+.paragr-about-restourant{
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #7A7A7A;
+}
+.div-about-meet{
+    max-width: 168px;
+}
+.about-meet{
+    margin-left: auto;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #C79002;
 }
 .headlines-mimino{
     margin-bottom: 12px;
@@ -17,31 +45,125 @@ letter-spacing: 0.3em;
 
 color: #494848;
 }
-.div-one{
-    padding-left: 15px;
-    padding-right: 15px;
+.images-shadow{
+    border-radius: 2px;
+    box-shadow: 0px 0px 84px -12px rgba(0,0,0,0.67);    
+    
+    }
+    .restourant-list{
+        display: flex;
+    }
+    .arrow-swiper{
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* -----MOBILE MEDIA------ */
+    @media  screen and (min-width: 414px) and (max-width: 1023px){
+
+        .containerr {
+            padding: 0 15px;
+          }
+    .about-kitchen{
+        background: #FFFDEE;
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    /* headline-mimino */
+    .div-two{
+        width: 258px;
+        margin-bottom: 28px;
+    }
+    .images-div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    }
+
+/*-----------MEDIA_TABLET--------------- */
+
+@media  screen and (min-width: 1024px){
+    .about-kitchen > .containerr{
+        padding-left: 47px;
+        padding-right: 60px;
+    }
+/* section */
+.about-kitchen{
+    padding-top: 120px;
+    padding-bottom: 32px;
+}
+.top-paragr{
+font-weight: 400;
+font-size: 32px;
+line-height: 1.15;
+color: #B4B4B4;
+}
+.headlines-mimino{
+font-weight: 700;
+font-size: 64px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: #494848;
+
 }
 .div-two{
-    width: 258px;
+    margin-bottom: 142px;
+    width: 439px;
 }
-.top-paragr {
-
-    display: block;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 12px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  color: #b4b4b4;
-}
+/* paragraphes bottom MIMINO */
 .paragr-about-restourant{
-    font-family: 'Montserrat';
 font-weight: 600;
-font-size: 12px;
+font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 
 color: #7A7A7A;
 
+}
+/* -------div-about-meet--------- */
+
+.div-about-meet{
+    margin-left: 48px;
+    max-width: 312px;
+}
+.about-meet{
+    margin-left: auto;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #C79002;
+}
+.meet-and-paragr{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.about-kitchen{
+    font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+/* Brown */
+
+color: #C79002;
+}
+
+.images-div{
+    margin-left: auto;
+    position: absolute;
+    top: 16em;
+    left: 512px;
+}
+/* ---------------restourant list --------------*/
+ .restourant-list{
+    justify-content: flex-end;
+    gap: 40px;
+ }
+ /* ------arrow list----------- */
+ .arrow-swiper{
+    gap: 34px;
+    display: flex;
+    justify-content: flex-end;
 }
 }
