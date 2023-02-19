@@ -10,18 +10,6 @@
   display: flex;
 }
 
-.footer-title {
-  font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.07;
-  color: #f353d6;
-  letter-spacing: 0.3em;
-  padding-top: 98px;
-  padding-left: 59px;
-  padding-right: 85px;
-  padding-bottom: 99px;
-}
 .navigation-list {
   list-style: none;
 }
@@ -38,6 +26,7 @@
 }
 .footer-title {
   font-family: 'Film P3';
+  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
