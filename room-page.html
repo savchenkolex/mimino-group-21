@@ -62,26 +62,13 @@
     target="_blank"
     >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
   >
-  <ul class="reserve-ul-hero">
-    <li class="reserve-li-hero">
-      <button
+  <button
         class="reserve-button-hero js-open-modal"
         type="button"
-        data-modal="2"
+        data-modal="3"
       >
-        Забронювати столик
+        Переглянути ціни
       </button>
-    </li>
-    <li class="reserve-li-hero">
-      <button
-        class="reserve-button-hero js-open-modal"
-        type="button"
-        data-modal="1"
-      >
-        Забронювати номер
-      </button>
-    </li>
-  </ul>
   <ul class="networks-hero networks">
     <li class="li-networks">
       <a href="https://www.instagram.com/" class="a-networks" target="_blank">
@@ -151,7 +138,7 @@
        </li>
       </ul>
       <div class="amenities__booking">
-        <button class="amenities__button  js-open-modal" type="button">ОФОРМИТИ БРОНЮВАННЯ</button>
+        <button class="amenities__button  js-open-modal"  data-modal="1" type="button">ОФОРМИТИ БРОНЮВАННЯ</button>
         <a class="amenities__link" href="./hotel-page.html" target="_blank">
           <span class="amenities__link-text">Повернутися до перегляду номерів</span>
         <svg class="amenities__icon"  width="24"  height="24">
@@ -162,7 +149,140 @@
     </div>
 </section>
 
+<!-- Kate -->
+<div class="modal" data-modal="1">
+  <button class="modal-close buttons js-modal-close">
+    <svg class="modal-icon" width="24" height="24">
+      <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЗАБРОНЮВАТИ НОМЕР</h1>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-input username"
+        placeholder="Ваше ім’я"
+        required
+        pattern="^[a-zA-Z-Яа-яЁёІіЇїЄє]+\s[a-zA-Z-Яа-яЁёІіЇїЄє]+${2,20}"
+      />
+      <span class="modal-label-text">На кого забронювати номер?</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="tel"
+        name="phone"
+        class="modal-input phone"
+        placeholder="+38 (___) ___-__-__"
+        required
+        pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+      />
+      <span class="modal-label-text">Номер телефону</span>
+    </label>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Двомісний люкс</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="2">Двомісний</li>
+          <li class="dropdown-list-item" data-value="2L">Двомісний люкс</li>
+          <li class="dropdown-list-item" data-value="3">Трьохмісний</li>
+        </ul>
+        <input
+          type="text"
+          name="select-room"
+          value=""
+          class="dropdown-input-hidden"
+          required
+        />
+      </div>
+      <span class="modal-label-text">Категорія номеру</span>
+    </div>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Сьогодні</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+          <li class="dropdown-list-item" data-value="week-later">
+            Через неділю
+          </li>
+        </ul>
+        <input
+          type="text"
+          name="select-date-arrival"
+          value=""
+          class="dropdown-input-hidden"
+          required
+        />
+      </div>
+      <span class="modal-label-text">Дата заїзду</span>
+    </div>
+    <div class="form-group">
+      <div class="dropdown">
+        <button class="dropdown-button">Сьогодні</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+          <li class="dropdown-list-item" data-value="week-later">
+            Через неділю
+          </li>
+        </ul>
+        <input
+          type="text"
+          name="select-date-departure"
+          value=""
+          class="dropdown-input-hidden"
+          required
+        />
+      </div>
+      <span class="modal-label-text">Дата виїзду</span>
+    </div>
+    <button type="submit" class="modal-submit buttons">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </form>
+</div>
 
+<div class="modal" data-modal="3">
+  <button class="modal-close buttons js-modal-close">
+    <svg class="modal-icon" width="24" height="24">
+      <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#x"></use>
+    </svg>
+  </button>
+  <h1 class="modal-header">ЦІНИ НА НОМЕР</h1>
+  <p class="modal-paragraph">Двомісний люкс</p>
+  <p class="modal-label-text room-category">Категорія номеру</p>
+  <form class="modal-form">
+    <label class="modal-label">
+      <input
+        type="text"
+        name="sum-nights"
+        class="modal-input"
+        placeholder="1"
+        required
+        pattern=""
+      />
+      <span class="modal-label-text">Кількість ночей</span>
+    </label>
+    <label class="modal-label">
+      <input
+        type="text"
+        name="price"
+        class="modal-input"
+        placeholder="1000"
+        required
+        pattern=""
+      />
+      <span class="modal-label-text">грн</span>
+    </label>
+    <button type="submit" class="modal-submit buttons">
+      ЗАБРОНЮВАТИ НОМЕР
+    </button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
 </main>
 <footer>
   <section>
