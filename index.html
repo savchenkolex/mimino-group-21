@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/dropdown-baa03a23.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-5739a627.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-1b360ae0.css">
   </head>
   <body>
 <!-- Victoria R -->
@@ -143,30 +143,85 @@
 </section>
 
     <section class="restaurant-details">
-  <h1 class="restaurant-details-title">міміно</h1>
-  <h2 class="restaurant-details-second-title">Ресторан</h2>
-  <p class="restaurant-details-text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit.
-  </p>
-  <ul class="restaurant-details-list">
-    <li class="restaurant-details-list-button">
-      <button
-        class="restaurant-details-button js-open-modal"
-        type="button"
-        data-modal="2"
-      >
-        Забронювати столик
-      </button>
-    </li>
-    <li class="restaurant-details-list-button">
-      <form action="./restaurant-page.html">
-        <button class="restaurant-details-button" type="submit">
-          Переглянути меню
-        </button>
-      </form>
-    </li>
-  </ul>
+  <div class="container">
+    <div class="container-restaurant-details">
+      <div class="details-food">
+        <h1 class="restaurant-details-title">міміно</h1>
+        <h2 class="restaurant-details-second-title">Ресторан</h2>
+        <p class="restaurant-details-text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+        <ul class="food-list">
+          <li class="food-list-meat">
+            <img
+              srcset="/mimino-group-21/assets/meat-1-2x-eac15e04.jpg 2x"
+              src="/mimino-group-21/assets/meat-1-1x-8771fe74.jpg"
+              alt="eat-1"
+              width="270"
+              height="270"
+            />
+          </li>
+          <li class="food-list-meat">
+            <img
+              srcset="/mimino-group-21/assets/meat-2-2x-0044b346.jpg 2x"
+              src="/mimino-group-21/assets/meat-2-1x-9d9f886e.jpg"
+              alt="eat-2"
+              width="162"
+              height="270"
+            />
+          </li>
+          <li class="food-list-meat">
+            <img
+              srcset="/mimino-group-21/assets/meat-3-2x-0bf54655.jpg 2x"
+              src="/mimino-group-21/assets/meat-3-1x-0a09210f.jpg"
+              alt="eat-3"
+              width="270"
+              height="270"
+            />
+          </li>
+        </ul>
+        <div class="swipe-arrow">
+          <ul class="swipe-navigation-list">
+            <li class="swipe-arrow">
+              <button class="arrow-btn" type="button">
+                <svg class="arrow-icons" width="32" height="32">
+                  <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#cil_arrow-left-white"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="swipe-arrow">
+              <button class="arrow-btn" type="button">
+                <svg class="arrow-icons" width="32" height="32">
+                  <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#cil_arrow-right-white"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-menu">
+        <ul class="restaurant-details-list">
+          <li class="restaurant-details-list-button">
+            <button
+              class="restaurant-details-button js-open-modal"
+              type="button"
+              data-modal="2"
+            >
+              Забронювати столик
+            </button>
+          </li>
+          <li class="restaurant-details-list-button">
+            <form action="./restaurant-page.html">
+              <button class="restaurant-details-button" type="submit">
+                Переглянути меню
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--  -->
