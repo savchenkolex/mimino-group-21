@@ -1,4 +1,4 @@
-@import url('./styles.css');
+@import url('./general.css');
 /*#region hotel section  */
 .room_for_2_luxe {
   background-color: var(--fon-lemon);
