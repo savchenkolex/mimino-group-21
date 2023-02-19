@@ -2,7 +2,6 @@
   background-color: var(--fon-lemon);
   position: relative;
   padding-top: 18px;
-  padding-bottom: 28px;
 }
 
 .main-about-hotel > .container {
@@ -58,6 +57,8 @@
 
 .about-hotel-pic1 {
   margin-bottom: 32px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .bottom-wrap {
@@ -82,6 +83,8 @@
 
 .about-hotel-pic2 {
   margin-left: auto;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .main-slider-wrap {
@@ -90,26 +93,35 @@
 }
 
 .main-slider-r {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .main-hotel-slider1 {
   position: absolute;
   left: -238px;
+
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .main-hotel-slider2 {
-    margin-left: auto;
+  margin-left: auto;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
-.main-button-list{
-    display: flex;
+.main-button-list {
+  display: flex;
 }
 
-.main-button-wrap  button {
+.main-button-wrap button {
   border: none;
   background-color: transparent;
   height: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-button-r {
