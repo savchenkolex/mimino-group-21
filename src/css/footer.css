@@ -12,7 +12,8 @@
 
 
 .footer-title {
-  font-family: 'Film P3';
+  color: #F3C653;
+  /* font-family: 'FilmP3Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -22,7 +23,7 @@
   padding-left: 59px;
   padding-top: 98px;
   padding-bottom: 99px;
-  margin-right: 85px;
+  margin-right: 85px; */
 
 }
 .information {
@@ -75,6 +76,21 @@
   display: flex;
   gap: 23px;
 }
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:12px 10px;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  height: 40px;
+}
+.soc-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.icon-footer {
+margin-left: 17px;
+}
 @media screen and (min-width: 414px) {
   .foooter-container {
     
@@ -110,6 +126,7 @@
   }
   .soc-list-item {
     display: block;
+    margin-left: 137px;
   }
 
 
