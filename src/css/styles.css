@@ -32,11 +32,14 @@
   background-color: rgba(255, 255, 255, 0.87);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  --fon-lemon: #FFFDEE;
-  --akzent-yellow: #F3C653;
-  --fon-dark-lemon: #F0ECD6;
-  --brown: #C79002;
-  --color-footer: #0E0C07;
+  --fon-lemon: #fffdee;
+  --akzent-yellow: #f3c653;
+  --fon-dark-lemon: #f0ecd6;
+  --brown: #c79002;
+  --color-footer: #0e0c07;
+  --black: #000000;
+  --logo-gray: #494848;
+  --white: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -84,31 +87,26 @@
 }
 
 .logo {
-  font-family: "FilmP3Bold";
+  font-family: 'FilmP3Bold';
   letter-spacing: 0.3em;
 }
 
 .logo-title {
-
 }
 
 .logo-link {
-
 }
 
 .logo-text {
   font-size: 64px;
   font-weight: 700;
   line-height: 1;
-  
 }
 
 .logo-light {
-color: white;
-
+  color: white;
 }
 
 .logo-dark {
-color: #494848;
+  color: #494848;
 }
-
