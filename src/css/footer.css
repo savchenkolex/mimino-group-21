@@ -50,6 +50,9 @@
 
 .soc {
 }
+.soc-list-item {
+  display: none;
+}
 .soc-item {
 
   
@@ -68,7 +71,7 @@
 .networks-list-item {
   margin-top: 33px;
 }
-.networks-hero {
+.networks-footer {
   display: flex;
   gap: 23px;
 }
@@ -102,7 +105,7 @@
   .networks-list-item {
     display: none;
   }
-  .information {
+  .navigation-position {
     display: flex;
   }
   .soc-list-item {
