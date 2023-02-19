@@ -13,6 +13,7 @@
 
 .footer-title {
   color: #F3C653;
+  cursor: pointer;
   /* font-family: 'FilmP3Bold';
   font-style: normal;
   font-weight: 700;
@@ -25,6 +26,9 @@
   padding-bottom: 99px;
   margin-right: 85px; */
 
+}
+.title-link:hover {
+color: aliceblue;
 }
 .information {
 }
@@ -45,6 +49,10 @@
   letter-spacing: 0.02em;
   color: #F3C653;
   display: block;
+  cursor: pointer;
+}
+.navigation-item:hover{
+  color: aliceblue;
 }
 .navigation-link {
 }
@@ -94,6 +102,18 @@ margin-left: 17px;
 @media screen and (min-width: 414px) {
   .foooter-container {
     
+  }
+  .footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #F3C653;
+    padding-left: 59px;
+    padding-top: 98px;
+    padding-bottom: 99px;
+    margin-right: 85px;
   }
 }
 
@@ -160,6 +180,7 @@ margin-left: 17px;
   .navigation-list {
     margin-left: 231px;
     margin-right: 199px;
+    cursor: pointer;
   }
 }
 
