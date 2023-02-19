@@ -1,0 +1,202 @@
+/* Hotel room hero Буркова Анна  */
+.room-hero__header{
+    height: 143px;
+    position: absolute;
+    background: linear-gradient(180deg, #000000 0%,
+     rgba(0, 0, 0, 0.55) 54.17%,
+     rgba(0, 0, 0, 0) 100%);
+}
+
+.hero{
+    padding-top:480px;
+    padding-bottom: 14px;
+}
+
+.room-hero__overlay{
+margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:  url("../img/room-hero-mobile.jpg");
+  height: 740px;
+ 
+  background-size: cover;
+  background-color: rgba(46, 47, 66, 0.7);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (-webkit-min-device-pixel-ratio: 2), 
+ screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .room-hero__overlay {
+    background-image: url("../img/room-hero-mobile@2x.jpg");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .room-hero__overlay {
+      background-image: url("../img/room-hero-tablet.jpg");
+      height: 718px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), 
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), 
+  screen and (min-width: 1024px) and (min-resolution: 192dpi), 
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+    .room-hero__overlay {
+      background-image:  url("../img/room-hero-tablet@2x.jpg");
+    }
+  }
+  
+@media screen and (min-width: 1280px) {
+    .room-hero__overlay {
+      background-image: url("../img/room-hero-desktop.jpg");
+      height: 720px;
+    }
+  }
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), 
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), 
+  screen and (min-width: 1280px) and (min-resolution: 192dpi), 
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    .room-hero__overlay {
+      background-image:  url("../img/room-hero-desktop@2x.jpg");
+    }
+  }
+
+.room-hero__title{
+margin-bottom: 14px;
+font-family: 'Times New Roman';
+font-weight: 700;
+font-size: 28px;
+line-height: 1.14;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+width: 325px;
+}
+
+@media screen and (min-width: 1024px) {
+    .room-hero__header {
+    height: 116px;
+    }
+    .hero {
+    padding-top: 450px;
+    padding-bottom: 22px;
+    }
+    .room-hero__title{
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    width: 507px;
+    }
+}
+
+.room-hero__text{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+width: 325px;
+margin-bottom: 0px;
+}
+@media screen and (min-width:1024px) {
+    .room-hero__text{
+        font-size: 16px;
+        width: 400px;
+        }
+        .room-hero__nav{
+            justify-content: space-between;
+        }
+
+}
+
+
+.room-hero__nav{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+.room-hero__networks{
+    margin-right: 70px;
+}
+
+.room-hero__items:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.room-hero__link{
+   display: flex;
+   width: 24px;
+   height: 24px;
+}
+.room-hero__map{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+.room-hero__map{
+position: relative;
+display: flex;
+flex-direction: row-reverse;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.01em;
+color: #E5E5E5;
+width:285px;border: 1px solid rgba(243, 198, 83, 0.7);
+border-radius: 2px;
+}
+}
+
+.room-hero__map-text{
+width: 233px;
+padding-top: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+
+}
+
+.room-hero__map-icon{
+    position: absolute;
+    top:25%;
+    left:16px;
+}
+
+
+.room-hero__buttton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    width: 232px;
+    height: 48px;
+    padding: 14px 35px;
+    margin: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    border: 2px solid;
+    border-color: #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+}
+
+
+.room-hero__buttton:hover,
+.room-hero__buttton:focus {
+  background-color:#ffffff;
+  border-color:#F3C653;
+}
+
