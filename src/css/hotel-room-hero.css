@@ -1,0 +1,62 @@
+
+.room-hero__header{
+    height: 143px;
+    position: absolute;
+}
+
+.hero{
+    padding-top: 143px;
+}
+
+.room-hero__overlay{
+margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: center;
+  background-image:  url("../img/room-hero-mobile.jpg");
+  height: 740px;
+ 
+  background-size: cover;
+  background-color: rgba(46, 47, 66, 0.7);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (-webkit-min-device-pixel-ratio: 2), 
+ screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .room-hero__overlay {
+    background-image: url("../img/room-hero-mobile@2x.jpg");
+    }
+}
+
+
+
+.room-hero__buttton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    width: 232px;
+    height: 48px;
+    padding: 14px 35px;
+    margin: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    border: 2px solid;
+    border-color: #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+}
+
+.room-hero__buttton:hover,
+.room-hero__buttton:focus {
+  background-color:#ffffff;
+  border-color:#F3C653;
+}
