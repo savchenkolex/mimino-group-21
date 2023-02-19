@@ -1,0 +1,7 @@
+.section-contacts {
+    background-color: var(--fon-lemon);
+}
+
+.contacts-wrapper {
+    display: flex;
+}
