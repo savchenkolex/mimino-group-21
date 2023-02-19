@@ -10,22 +10,9 @@
   display: flex;
 }
 
-.navigation-list {
-  list-style: none;
-}
 
-.foot {
-  background-color: #0E0C07;
-}
-
-.title {
-
-}
-.footer-position {
-  display: flex;
-}
 .footer-title {
-  font-family: "FilmP3Bold";
+  font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -33,7 +20,9 @@
   letter-spacing: 0.3em;
   color: #F3C653;
   padding-left: 59px;
-  padding-right: 85px;
+  padding-top: 98px;
+  padding-bottom: 99px;
+  margin-right: 85px;
 
 }
 .information {
@@ -58,9 +47,7 @@
 }
 .navigation-link {
 }
-.soc-list-item {
-  display: none;
-}
+
 .soc {
 }
 .soc-item {
@@ -106,6 +93,15 @@
     margin-right: 163px;
     font-size: 64px;
   }
+  .navigation-list {
+     padding-top: 80px;
+  }
+  .soc {
+    padding-top: 80px;
+  }
+  .networks-list-item {
+    display: none;
+  }
   .information {
     display: flex;
   }
@@ -113,9 +109,7 @@
     display: block;
   }
 
-  .networks-list-item {
-    display: none;
-  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -144,3 +138,103 @@
   
   }
 }
+
+/* .foot {
+  background: #0E0C07;
+}
+.container {
+
+}
+.footer-container {
+  max-width: 414px;
+}
+.footer-title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: #F3C653;
+  padding-top: 98px;
+  padding-bottom: 99px;
+  padding-left: 59px;
+  margin-right: 85px;
+}
+.footer-position {
+  display: flex;
+}
+.navigation-list {
+  list-style: none;
+  padding-top: 40px;
+  padding-right: 41px;
+  margin-bottom: 33px;
+}
+.navigation-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+}
+.navigation-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.soc-list-item {
+  display: none;
+}
+.soc{
+  padding-top: 80px;
+}
+.soc-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #F3C653;
+}
+.networks-footer {
+  display: flex;
+  gap: 23px;
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+  .footer-title {
+    font-size: 64px;
+    line-height:1.07;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+  .soc-list-item {
+    display: block;
+  }
+  .networks-footer {
+    display: none;
+  }
+  .information {
+    display: flex;
+  }
+  .navigation-list {
+    padding-right: 0;
+    padding-top: 80px;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+} */
