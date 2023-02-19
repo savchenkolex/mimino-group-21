@@ -31,7 +31,7 @@
   padding: 15px 15px 60px;
   border-radius: 2px;
 
-  background-color: #fffdee;
+  background-color: var(--fon-lemon);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -93,10 +93,6 @@
   color: #808080;
 }
 
-.room-category {
-  margin-bottom: 20px;
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -153,7 +149,7 @@
   text-align: left;
 
   color: #808080;
-  background-color: #fffdee;
+  background-color: var(--fon-lemon);
 }
 
 .dropdown-button:focus,
@@ -200,7 +196,7 @@
   text-align: left;
 
   color: #808080;
-  background-color: #fffdee;
+  background-color: var(--fon-lemon);
 
   overflow: hidden;
 }
@@ -220,7 +216,7 @@
 }
 
 .dropdown-list-item:hover {
-  background: #f3c653;
+  background-color: var(--akzent-yellow);
 }
 
 .modal-input {
@@ -262,11 +258,17 @@
 
   letter-spacing: 0.02em;
 
-  color: #c79002;
+  color: var(--brown);
+}
+
+.modal-label-text.room-category {
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .modal-submit {
-  padding: 20px 43px;
+  padding: 20px 0;
   margin-top: 20px;
   border: 1px solid #f3c653;
   border-radius: 2px;
@@ -280,13 +282,83 @@
   background-color: #000000;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit:hover,
 .modal-submit:focus {
   color: #000000;
-  background-color: #f3c653;
-  border-color: #f3c653;
+  background-color: var(--akzent-yellow);
+}
+
+@media screen and (min-width: 414px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    max-width: 712px;
+  }
+
+  .modal-header {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .modal-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 16px;
+  }
+
+  .form-position {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .modal-submit {
+    flex-basis: 100%;
+    margin-top: 0;
+    padding: 18px 0;
+
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .modal-label:first-child {
+    margin-bottom: 28px;
+  }
+
+  .form-group:first-child {
+    margin-bottom: 28px;
+  }
+
+  .modal-input {
+    height: 64px;
+  }
+
+  .modal-input::placeholder {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .dropdown-button {
+    height: 64px;
+
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .dropdown-list {
+    top: 64px;
+  }
+
+  .dropdown-list-item {
+    height: 64px;
+
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

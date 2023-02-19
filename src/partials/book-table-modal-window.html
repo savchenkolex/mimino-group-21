@@ -6,66 +6,70 @@
   </button>
   <h1 class="modal-header">ЗАБРОНЮВАТИ СТОЛИК</h1>
   <form class="modal-form">
-    <label class="modal-label">
-      <input
-        type="text"
-        name="user-name"
-        class="modal-input username"
-        placeholder="Ваше ім’я"
-        required
-        pattern="^[a-zA-Z-Яа-яЁёІіЇїЄє]+\s[a-zA-Z-Яа-яЁёІіЇїЄє]+${2,20}"
-      />
-      <span class="modal-label-text">На кого забронювати номер?</span>
-    </label>
-    <label class="modal-label">
-      <input
-        type="tel"
-        name="phone"
-        class="modal-input phone"
-        placeholder="+38 (___) ___-__-__"
-        required
-        pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
-      />
-      <span class="modal-label-text">Номер телефону</span>
-    </label>
-    <div class="form-group">
-      <div class="dropdown">
-        <button class="dropdown-button">2</button>
-        <ul class="dropdown-list">
-          <li class="dropdown-list-item" data-value="1">1</li>
-          <li class="dropdown-list-item" data-value="2">2</li>
-          <li class="dropdown-list-item" data-value="3">3</li>
-          <li class="dropdown-list-item" data-value="4">4</li>
-        </ul>
+    <div class="form-position">
+      <label class="modal-label">
         <input
           type="text"
-          name="number-persons"
-          value=""
-          class="dropdown-input-hidden"
+          name="user-name"
+          class="modal-input username"
+          placeholder="Ваше ім’я"
           required
+          pattern="^[a-zA-Z-Яа-яЁёІіЇїЄє]+\s[a-zA-Z-Яа-яЁёІіЇїЄє]+${2,20}"
         />
-      </div>
-      <span class="modal-label-text">Столик на яку кількість осіб?</span>
+        <span class="modal-label-text">На кого забронювати номер?</span>
+      </label>
+      <label class="modal-label">
+        <input
+          type="tel"
+          name="phone"
+          class="modal-input phone"
+          placeholder="+38 (___) ___-__-__"
+          required
+          pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+        />
+        <span class="modal-label-text">Номер телефону</span>
+      </label>
     </div>
-    <div class="form-group">
-      <div class="dropdown">
-        <button class="dropdown-button">Сьогодні</button>
-        <ul class="dropdown-list">
-          <li class="dropdown-list-item" data-value="today">Сьогодні</li>
-          <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
-          <li class="dropdown-list-item" data-value="week-later">
-            Через неділю
-          </li>
-        </ul>
-        <input
-          type="text"
-          name="date-arrival"
-          value=""
-          class="dropdown-input-hidden"
-          required
-        />
+    <div class="form-position">
+      <div class="form-group">
+        <div class="dropdown">
+          <button class="dropdown-button">2</button>
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item" data-value="1">1</li>
+            <li class="dropdown-list-item" data-value="2">2</li>
+            <li class="dropdown-list-item" data-value="3">3</li>
+            <li class="dropdown-list-item" data-value="4">4</li>
+          </ul>
+          <input
+            type="text"
+            name="number-persons"
+            value=""
+            class="dropdown-input-hidden"
+            required
+          />
+        </div>
+        <span class="modal-label-text">Столик на яку кількість осіб?</span>
       </div>
-      <span class="modal-label-text">На яку дату бронювати?</span>
+      <div class="form-group">
+        <div class="dropdown">
+          <button class="dropdown-button">Сьогодні</button>
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item" data-value="today">Сьогодні</li>
+            <li class="dropdown-list-item" data-value="tomorrow">Завтра</li>
+            <li class="dropdown-list-item" data-value="week-later">
+              Через неділю
+            </li>
+          </ul>
+          <input
+            type="text"
+            name="date-arrival"
+            value=""
+            class="dropdown-input-hidden"
+            required
+          />
+        </div>
+        <span class="modal-label-text">На яку дату бронювати?</span>
+      </div>
     </div>
     <button type="submit" class="modal-submit buttons">
       ОФОРМИТИ БРОНЮВАННЯ
