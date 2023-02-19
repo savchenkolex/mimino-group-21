@@ -32,17 +32,18 @@
   background-color: rgba(255, 255, 255, 0.87);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --fon-lemon: #FFFDEE;
+  --akzent-yellow: #F3C653;
+  --fon-dark-lemon: #F0ECD6;
+  --brown: #C79002;
+  --color-footer: #0E0C07;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
-
-
-
 
 .container {
   margin: 0 auto;
@@ -68,3 +69,46 @@
     padding: 0 85px;
   }
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
+  font-family: "FilmP3Bold";
+  letter-spacing: 0.3em;
+}
+
+.logo-title {
+
+}
+
+.logo-link {
+
+}
+
+.logo-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  
+}
+
+.logo-light {
+color: white;
+
+}
+
+.logo-dark {
+color: #494848;
+}
+
