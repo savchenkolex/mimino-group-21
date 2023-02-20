@@ -106,10 +106,9 @@
 }
 .networks-hero {
     margin-left: 15px;
-}
-.networks {
     display: flex;
 }
+
 .li-networks:not(:last-child){
     margin-right: 20px;
 }
