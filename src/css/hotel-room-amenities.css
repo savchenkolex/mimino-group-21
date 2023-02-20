@@ -4,70 +4,13 @@
     background-color: #FFFDEE;
 }
 
-@media screen and (min-width:1024px) {
-    .hotel-room-amenities{
-    padding-top: 50px;
-    padding-bottom: 40px;
-    }
-    .amenities__text {
-    width: 757px;
-    }
-    .amenities__item:last-child {
-    margin-bottom: 0px;
-    }
-    .amenities__text-box {
-    display: flex;
-    }
-    .amenities__item-text {
-    width: 400px;
-    margin-bottom: 0px;
-    }
-    .amenities__item-text:not(:last-child) {
-    margin-right: 80px;
-    }
-    .amenities__booking {
-    flex-direction: column;
-    align-content: flex-end;
-    margin-top: 40px;
-    }
-    .amenities__button {
-    font-size: 24px;
-    line-height: 1.21;
-    width: 434px;
-    height: 64px;
-    padding: 18px 38px;
-    }
-    .amenities__link {
-    margin-top: 32px;
-    font-size: 20px;
-    line-height: 1.2;
-    }
-    .amenities__link-text {
-    margin-right: 16px;
-    }
-
-}
-
-@media screen and (min-width:1280px) {
-    .hotel-room-amenities {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    }
-    .amenities__item-text:not(:last-child) {
-    margin-right: 159px;
-    }
-    .amenities__booking {
-    padding-right: 114px;
-    }
-}
-
 .amenities__title{
     margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 1.16;
+    line-height: 37px;
 
     color: #000000;
 }
@@ -107,7 +50,6 @@
 }
 
 .amenities__item-text{
-   
     font-family: 'Montserrat Bold';
     font-style: normal;
     font-weight: 700;
@@ -131,17 +73,18 @@
     font-family: 'Montserrat Medium';
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: 29px;
     color: #FFFFFF;
     width: 384px;
     height: 64px;
-    margin: 0;
+    padding: 20px 42px;
     background-color: #000000;
     border: 1px solid;
     border-color: #F3C653;
     border-radius: 25px;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   
     transition: background-color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
@@ -185,4 +128,59 @@
    fill: #F3C653;
 }
 
+@media screen and (min-width:1024px) {
+    .hotel-room-amenities{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    }
+    .amenities__text {
+    width: 757px;
+    }
+    .amenities__item:last-child {
+    margin-bottom: 0px;
+    }
+    .amenities__text-box {
+    display: flex;
+    }
+    .amenities__item-text {
+    width: 400px;
+    margin-bottom: 0px;
+    }
+    .amenities__item-text:not(:last-child) {
+    margin-right: 80px;
+    }
+    .amenities__booking {
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 40px;
+    }
+    .amenities__button {
+    font-size: 24px;
+    line-height: 1.21;
+    width: 434px;
+    height: 64px;
+    padding: 18px 37px;
+    }
+    .amenities__link {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+    .amenities__link-text {
+    margin-right: 16px;
+    }
 
+}
+
+@media screen and (min-width:1280px) {
+    .hotel-room-amenities {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+    .amenities__item-text:not(:last-child) {
+    margin-right: 159px;
+    }
+    .amenities__booking {
+    padding-right: 114px;
+    }
+}
