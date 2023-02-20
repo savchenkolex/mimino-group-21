@@ -23,6 +23,11 @@
   flex-direction: column;
   margin-bottom: 32px;
 }
+.room_for_3 >.container >.hotel-block-top >.hotel-block-text{
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
 .hotel-block-text-section_2 {
   display: flex;
   flex-direction: column;
