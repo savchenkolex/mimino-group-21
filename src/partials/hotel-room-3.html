@@ -1,54 +1,114 @@
 <!-- 3 секція Hotel Page -->
 <section class="room_for_2">
   <div class="container">
-    <div class="hotel-block-text">
-      <p class="hotel p_text">Amet minim mollit non</p>
-      <a class="hotel logo_text">mimiho</a>
-      <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР</h1>
-      <p class="hotel-section-p_text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
-    <div class="thumb-hotel-img">
-      <img
-        srcset="img/photodrafts hotel page/m-bedroom-3-244.jpg 1x , 
-      img/photodrafts hotel page/m-bedroom-3-244@2x.jpg 2x ,
-      img/photodrafts hotel page/t-bedroom-3-400.jpg 400w ,
-      img/photodrafts hotel page/d-bathroom-3-460.jpg 460w"
-        src="img/photodrafts hotel page/m-bedroom-3-244.jpg"
-        sizes="(min-width: 1024px) 400px, (min-width: 1280px) 460px, 244px"
-        alt="Двомісний номер"
-      />
+    <div class="hotel-block-top">
+      <div class="hotel-block-text">
+        <p class="hotel p_text">Amet minim mollit non</p>
+        <a class="hotel logo_text">mimiho</a>
+        <h1 class="hotel-section-section_text">ДВОМІСНИЙ НОМЕР</h1>
+        <p class="hotel-section-p_text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div class="block-hotel-img">
+        <picture>
+          <source
+            srcset="
+              img/photodrafts-hotel-page/m-bedroom-3-244.jpg    1x,
+              img/photodrafts-hotel-page/m-bedroom-3-244@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              img/photodrafts-hotel-page/t-bedroom-3-400.jpg    1x,
+              img/photodrafts-hotel-page/t-bedroom-3-400@2x.jpg 2x
+            "
+            media="(min-width: 1024px) and (max-width:1279px)"
+          />
+          <source
+            srcset="
+              img/photodrafts-hotel-page/d-bedroom-3-460.jpg    1x,
+              img/photodrafts-hotel-page/d-bedroom-3-460@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="thumb-hotel-img"
+            src="img/photodrafts-hotel-page/m-bedroom-3-244.jpg"
+            alt="Двомісний номер люкс"
+            width="244"
+          />
+        </picture>
+      </div>
     </div>
     <div class="hotel-block-bottom">
       <div class="hotel-block-slider">
         <div class="hotel-block-slider">
           <ul class="hotel-group-img-slider">
             <li class="hotel-list-img-slider">
-              <img
-                srcset="img/photodrafts hotel page/m-bathroom-3-194.jpg 1x , 
-            img/photodrafts hotel page/m-bathroom-3-194@2x.jpg 2x ,
-            img/photodrafts hotel page/t-bathroom-3-194.jpg 194w ,
-            img/photodrafts hotel page/d-bathroom-3-254.jpg 254w"
-                src="img/photodrafts hotel page/m-bathroom-3-194.jpg"
-                alt="Ванна"
-                width="194"
-                height="194"
-              />
+              <picture>
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/m-bathroom-3-194.jpg    1x,
+                    img/photodrafts-hotel-page/m-bathroom-3-194@2x.jpg 2x
+                  "
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/t-bathroom-3-194.jpg    1x,
+                    img/photodrafts-hotel-page/t-bathroom-3-194@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px) and (max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/d-bathroom-3-254.jpg    1x,
+                    img/photodrafts-hotel-page/d-bathroom-3-254@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  class="thumb-hotel-img-small"
+                  src="img/photodrafts-hotel-page/m-bathroom-3-194.jpg"
+                  alt="Ванна"
+                  width="194"
+                />
+              </picture>
             </li>
             <li class="list-img-slider">
-              <img
-                srcset="img/photodrafts hotel page/m-holl-3-194.jpg 1x , 
-            img/photodrafts hotel page/m-holl-3-194@2x.jpg 2x ,
-            img/photodrafts hotel page/t-holl-3-194.jpg 194w ,
-            img/photodrafts hotel page/d-holl-3-254.jpg 254w"
-                src="img/photodrafts hotel page/m-holl-3-194.jpg"
-                alt="холл"
-                width="194"
-                height="194"
-              />
+              <picture>
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/m-holl-3-194.jpg    1x,
+                    img/photodrafts-hotel-page/m-holl-3-194@2x.jpg 2x
+                  "
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/t-holl-3-194.jpg    1x,
+                    img/photodrafts-hotel-page/t-holl-3-194@2x.jpg 2x
+                  "
+                  media="(min-width: 1024px) and (max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    img/photodrafts-hotel-page/d-holl-3-254.jpg    1x,
+                    img/photodrafts-hotel-page/d-holl-3-254@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  class="thumb-hotel-img-small"
+                  src="img/photodrafts-hotel-page/m-holl-3-194.jpg"
+                  alt="Холл"
+                  width="194"
+                />
+              </picture>
             </li>
           </ul>
         </div>
