@@ -1,3 +1,4 @@
+/* Section Restaraunt-details Іван Івановський */
 .container-restaurant-details {
   display: flex;
   flex-direction: row-reverse;
@@ -11,7 +12,7 @@
   background-position: center center;
   background-size: cover;
   background-color: var(--color-primary);
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 40px;
   width: auto;
   display: flex;
@@ -19,7 +20,7 @@
 }
 
 .restaurant-details-title {
-  font-family: 'Film P3';
+  font-family: 'FilmP3Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -30,7 +31,7 @@
 }
 
 .restaurant-details-second-title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -41,7 +42,7 @@
 }
 
 .restaurant-details-text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat SemiBold';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -68,7 +69,7 @@
 }
 
 .restaurant-details-button {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -80,7 +81,7 @@
   padding: 14px 24px;
   cursor: pointer;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #ffffff;
@@ -107,6 +108,7 @@
 }
 
 .arrow-icons {
+  fill: var(--white);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
