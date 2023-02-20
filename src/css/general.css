@@ -30,21 +30,21 @@
 }
 @media screen and (min-width: 414px) {
   .container {
-    min-width: 414px;
+    width: 414px;
     padding: 0 15px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1024px;
+    width: 1024px;
     padding: 0 47px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1280px;
+    width: 1280px;
     padding: 0 85px;
   }
 }
