@@ -35,7 +35,7 @@
   align-items: flex-end;
 }
 .hotel-block-bottom{
-  margin-top: 36px;
+  margin-top: 32px;
 }
 .hotel-block-img{
   display: flex;
@@ -48,7 +48,24 @@
 .hotel-block-slider {
   margin-bottom: 72px;
 }
-
+.hotel-block-slider-qw{
+  margin-top: 40px;
+  display:flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.hotel-block-slider-qw.sect-room_for_3{
+  flex-direction: row;
+}
+.group-hotel-slider{
+  display: flex;
+}
+.list-hotel-slider:not(:last-child){
+  margin-right: 32px;
+}
+.hotel-block-bottom.bottom-room_for_3 {
+  flex-direction: row-reverse;
+}
 .hotel-block-button {
   display: flex;
   justify-content: center;
@@ -206,6 +223,10 @@
     margin-top: 40px;
     display:flex;
     align-items: center;
+    flex-direction: row-reverse;
+  }
+  .hotel-block-slider-qw.sect-room_for_3{
+    flex-direction: row;
   }
   .group-hotel-slider{
     display: flex;
