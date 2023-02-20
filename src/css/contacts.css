@@ -38,6 +38,7 @@
   margin-bottom: 16px;
 }
 
+
 .contact-title {
   font-family: 'Montserrat Medium';
   font-weight: 500;
@@ -57,12 +58,15 @@
   height: 40px;
   background-color: #fff;
   border: 0.5px solid #f3c653;
+  color: #494848;
   border-radius: 2px;
+  
 }
 
 .contact-fild-box > .tel-fild {
   min-width: 144px;
 }
+
 .contact-fild {
   display: inline-flex;
   width: 260px;
@@ -70,6 +74,10 @@
   background-color: #fff;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
+
+}
+.hotel {
+  margin-left: 28px;
 }
 
 .tel {
