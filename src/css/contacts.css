@@ -12,7 +12,7 @@
 }
 
 .contacts-title-top {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .logo-text {
@@ -32,24 +32,52 @@
   color: #7a7a7a;
 }
 
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
 .contact-title {
-    display: inline-block;
-    margin: 0;
+  font-family: 'Montserrat Medium';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #c79002;
+
+  display: inline-block;
+  margin: 0;
+  margin-right: 7px;
 }
 
 .tel-fild {
-    display: inline-flex;
-    align-items: center;
-    height: 40px;
-    background-color: red;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  background-color: #fff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
 }
 
 .contact-fild-box > .tel-fild {
-    min-width: 144px;
+  min-width: 144px;
 }
 
-/* .contact-fild {
-    display: inline-block;
-    height: 40px;
-    background-color: red;
-} */
+.tel {
+  font-family: 'Montserrat Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #494848;
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 414px) {
+  .contact-title {
+    margin-right: 21px;
+  }
+}
