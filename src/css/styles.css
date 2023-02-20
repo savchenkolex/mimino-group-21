@@ -13,7 +13,7 @@
 @import url('./hotel-room-amenities.css');
 @import url('./about-restaurant.css');
 @import url('./contacts.css');
-@import url('./footer.css');
+@import url('./header.css');
 @import url('./hero.css');
 @import url('./hotel-about.css');
 @import url('./hotel-details.css');
@@ -22,3 +22,4 @@
 @import url('./restaurant-details.css');
 @import url('./restaurant-hero.css');
 @import url('./restaurant-kitchen.css');
+@import url('./footer.css');
