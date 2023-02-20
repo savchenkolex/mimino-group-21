@@ -7,64 +7,100 @@
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/dropdown-baa03a23.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-b9e8eab9.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-56ec47aa.css">
   </head>
   <body>
-<!-- Anna Burkova -->
-    <!-- Hotel room hero Буркова Анна -->
-<header class="room-hero__header">
-  <div class="container ">
-      <nav>
-          <a href="./index.html" class="logo-header">MIMIHO</a>
-          <ul class="site-nav">
-              <li class="li-nav">
-                  <a href="./restaurant-page.html">Ресторан</a>
-                  <a href="tel:+380955559533" class="tel-header">095 555 95 33</a>
-              </li>
-              <li class="li-nav">
-                  <a href="./hotel-page.html">Готель</a>
-                  <a href="tel:+380668491089" class="tel-header">066 849 10 89</a>
-              </li>
-          </ul>
-      </nav>
-      </div>
+    <header>
+        <nav class="container header">
+            <a href="./index.html" class="logo logo-header">MIMIHO</a>
+            <ul class="site-nav">
+                <li class="li-nav">
+                    <a href="./restaurant-page.html" class="a-nav">Ресторан</a>
+                    <a href="tel:+380955559533" class="icon-tel-header">
+                        <svg width="24" height="24"><use href="../img/icons.svg#fluent_phone-24-regular"></use></svg>
+                    </a>
+                    <a href="tel:+380955559533" class="tel-header">095 555 95 33</a>
+                </li>
+                <li class="li-nav">
+                    <a href="./hotel-page.html" class="a-nav">Готель</a>
+                    <a href="tel:+380955559533" class="icon-tel-header">
+                        <svg width="24" height="24"><use href="../img/icons.svg#fluent_phone-24-regular"></use></svg>
+                    </a>
+                    <a href="tel:+380668491089" class="tel-header">066 849 10 89</a>
+                </li>
+            </ul>
+            <ul class="networks-header">
+                <li class="li-networks">
+                    <a href="https://www.instagram.com/" class="a-networks" target="_blank">
+                        <svg width="24" height="24" class="icon-header">
+                            <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#akar-icons_instagram-fill"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="li-networks">
+                    <a href="https://www.facebook.com/" class="a-networks" target="_blank">
+                        <svg width="24" height="24" class="icon-header">
+                            <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#jam_facebook-square"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="li-networks">
+                    <a href="https://web.telegram.org/z/" class="a-networks" target="_blank">
+                        <svg width="24" height="24" class="icon-header">
+                            <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#la_telegram-plane"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 </header>
-<section class="hero room-hero__overlay ">
-  <div class="container">
+
+<!-- Anna Burkova -->
+     <!-- Hotel room hero Буркова Анна  -->
+<section class="room__hero room-hero__overlay ">
+  <div class="container  room-hero__container">
+    <div class="room-hero__arrows">
+      <svg width="40" height="40" class="room-hero__arrow-icon">
+        <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#cil_arrow-left-yellow"></use>
+        </svg>
+        <svg width="40" height="40" class="room-hero__arrow-icon">
+          <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#cil_arrow-right-yellow"></use>
+          </svg>
+    </div>
   <h1 class="room-hero__title">ДВОМІСНИЙ НОМЕР люкс</h1>
   <p class="room-hero__text"> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
     Velit officia consequat duis enim velit
     mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-  
     <div class="room-hero__nav">
       <a class="room-hero__map" href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl" target="_blank">
         <svg width="24" height="24" class="room-hero__map-icon">
         <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#entypo_location-pin"></use>
         </svg>
-        <span class="room-hero__map-text">Україна, м. Полтава, вул. Маршала Бірюзова, 15</span>
+        <span class="room-hero__map-text">Україна, м. Полтава,<br>
+          вул. Маршала Бірюзова, 15 </span>
        </a>
-    <ul class="room-hero__networks networks">
-      <li class="room-hero__items li-networks">
+    <ul class="room-hero__networks">
+      <li class="room-hero__items">
           <a href="https://www.instagram.com/" class="room-hero__link" target="_blank">
-              <svg width="24" height="24" class="icon-header">
+              <svg width="24" height="24">
                   <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#akar-icons_instagram-fill"></use>
               </svg>
           </a>
       </li>
-      <li class="room-hero__items li-networks">
+      <li class="room-hero__items">
           <a href="https://www.facebook.com/" class="room-hero__link"  target="_blank">
-              <svg width="24" height="24" class="icon-header">
+              <svg width="24" height="24">
                   <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#jam_facebook-square"></use>
               </svg>
           </a>
       </li>
-      <li class="room-hero__items li-networks">
+      <li class="room-hero__items">
           <a href="https://web.telegram.org/z/"  class="room-hero__link"  target="_blank">
-              <svg  width="24"  height="24"  class="icon-header">
+              <svg  width="24"  height="24">
                   <use href="/mimino-group-21/assets/icons-d4cda8c7.svg#la_telegram-plane"></use>
               </svg>
           </a>
@@ -74,6 +110,7 @@
   </div>
   </div>
 </section>
+<main>
     <!-- Секція "Room Page. Amenities" Буркова Анна -->
 <section class="hotel-room-amenities">
      <div class="container">
@@ -127,6 +164,7 @@
       </div>
     </div>
 </section>
+
 
 <!-- Kate -->
 <div class="modal" data-modal="1">
