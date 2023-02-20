@@ -13,7 +13,7 @@ a {
     justify-content: space-between;
 }
 .logo-header {
-    margin-right: 52px;
+    margin-right: 5px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -23,6 +23,7 @@ a {
 .site-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .li-nav {
     display: flex;
@@ -40,6 +41,12 @@ a {
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #F3C653;
+
+    transition: color 250ms var(--timing-function);
+}
+.a-nav:focus,
+.a-nav:hover {
+    color: #c79d31;
 }
 .tel-header {
     display: none;
@@ -77,16 +84,25 @@ a {
             padding: 12px 8px 12px 14px;
             border: 1px solid rgba(243, 198, 83, 0.7);
             border-radius: 2px;
+            width: 149px;
+            background-color: transparent;
         }
+        
         .tel-header::before {
             display: block;
             content: "";
             height: 24px;
             width: 24px;
-            background-image: url("../img/icon-tel.svg");
+            background-image: url("./img/icon-tel.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+
+            transition: background-color 250ms var(--timing-function);
+        }
+        .tel-header:focus,
+        .tel-header:hover {
+            background-color: rgba(0, 0, 0, 0.7);;
         }
         .li-nav:not(:last-child) {
             margin-right: 72px;
@@ -112,4 +128,13 @@ a {
         .li-networks:not(:last-child){
             margin-right: 20px;
         }
+        .icon-header {
+            fill: #f3c653;
+        
+            transition: fill 250ms var(--timing-function);
+        }
+        .icon-header:focus,
+        .icon-header:hover {
+            fill: rgba(243, 198, 83, 0.7);
     }
+}
