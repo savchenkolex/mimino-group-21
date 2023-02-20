@@ -21,10 +21,7 @@
 }
 
 .restaurant-menu-title {
-  font-family: 'Times New Roman';
-  font-style: Bold;
-  /* не працює */
-  font-weight: 700;
+  font-family: 'Times New Roman Bold';
   font-size: 28px;
   line-height: 1.16;
   margin-bottom: 32px;
@@ -71,10 +68,7 @@ margin-bottom: 20px;
 
 .restaurant-menu-chapter {
   display: inline-block;
-  font-family: 'Times New Roman';
-  font-style: Bold;
-  /* не працює */
-  font-weight: 700;
+  font-family: 'Times New Roman Bold';
   font-size: 20px;
   line-height: 1.16;
   margin-bottom: 16px;
@@ -86,11 +80,15 @@ margin-bottom: 20px;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .restaurant-menu-chapter {
+    font-size: 24px;
+  }
+}
+
 .restaurant-menu-dishes {
   display: inline-block;
-    font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
+    font-family: 'Montserrat Medium';
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
@@ -102,6 +100,7 @@ margin-bottom: 20px;
   .restaurant-menu-dishes {
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 12px;
   }
 }
 
@@ -109,11 +108,8 @@ margin-bottom: 20px;
 
 .restaurant-menu-ingredients {
   display: block;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-style: Regular;
-  /* не працює */
-  max-width: 221px;
+  font-family: 'Montserrat Regular';
+  max-width: 250px;
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -121,20 +117,14 @@ margin-bottom: 20px;
 }
 
 .restaurant-menu-width {
-  font-family: 'Montserrat';
-  font-style: light;
-  /* не працює */
-  font-weight: 300;
+  font-family: 'Montserrat Light';
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
 }
 
 .restaurant-menu-price {
-  font-family: 'Montserrat';
-  font-style: Bold;
-  /* не працює */
-  font-weight: 700;
+  font-family: 'Montserrat Bold';
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
