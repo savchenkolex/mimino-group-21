@@ -1,7 +1,55 @@
+.contacts-maps {
+  display: none;
+}
+
 .section-contacts {
-    background-color: var(--fon-lemon);
+  background-color: var(--fon-lemon);
+  padding: 36px 15px 32px 15px;
 }
 
 .contacts-wrapper {
-    display: flex;
+  display: flex;
 }
+
+.contacts-title-top {
+    margin-bottom: 16px;
+}
+
+.logo-text {
+  font-size: 40px;
+  line-height: 1.07;
+
+  margin-bottom: 12px;
+}
+
+.sub-title {
+  font-family: 'Montserrat SemiBold';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+
+.contact-title {
+    display: inline-block;
+    margin: 0;
+}
+
+.tel-fild {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    background-color: red;
+}
+
+.contact-fild-box > .tel-fild {
+    min-width: 144px;
+}
+
+/* .contact-fild {
+    display: inline-block;
+    height: 40px;
+    background-color: red;
+} */
