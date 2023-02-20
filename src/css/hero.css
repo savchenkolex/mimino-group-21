@@ -1,3 +1,4 @@
+
 .hero {
     width: 100%;
     height: 740px;
@@ -28,7 +29,7 @@
     font-size: 96px;
     line-height: 1.073;
     letter-spacing: 0.3em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .h-hero {
     margin-bottom: 40px;
@@ -38,7 +39,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .p-hero {
     margin-bottom: 113px;
@@ -48,7 +49,7 @@
     font-size: 32px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .map-hero {
     position: absolute;
@@ -56,14 +57,13 @@
     align-items: center;
     top: 64px;
     right: 15px;
-    width: 210px;
+    width: 225px;
     height: 47px;
-
     background-color: transparent;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
 
-    padding: 8px 0 8px 34px;
+    padding: 8px 8px 8px 16px;
     margin: 0;
 
     font-family: 'Montserrat';
@@ -98,10 +98,10 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #F3C653;
+    color: var(--akzent-yellow);
 
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--white);
     border-radius: 25px;
 }
 .networks-hero {
@@ -143,13 +143,15 @@
     }
     .div-hero {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 26px;
+        height: 50px;
     }
     .map-hero {
         position: static;
         display: flex;
         align-items: center;
-        width: 261px;   
+        width: 285px;   
         
         padding: 8px 8px 8px 16px;
         margin: 0 137px 0 47px;
@@ -159,6 +161,7 @@
     }
     .reserve-ul-hero {
         display: flex;
+        margin-right: 47px;
     }
     .reserve-li-hero:not(:last-child) {
         margin-right: 40px;
