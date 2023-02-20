@@ -1,5 +1,6 @@
 /* Hotel room hero Буркова Анна  */
 .room-hero__header{
+    width: 100%;
     height: 143px;
     position: absolute;
     background: linear-gradient(180deg, #000000 0%,
@@ -7,8 +8,8 @@
      rgba(0, 0, 0, 0) 100%);
 }
 
-.hero{
-    padding-top:480px;
+.room__hero{
+    padding-top:350px;
     padding-bottom: 14px;
 }
 
@@ -62,6 +63,12 @@
     }
   }
 
+.room-hero__arrows{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+
 .room-hero__title{
 margin-bottom: 14px;
 font-family: 'Times New Roman Bold';
@@ -69,7 +76,7 @@ font-weight: 700;
 font-size: 28px;
 line-height: 1.14;
 letter-spacing: 0.05em;
-color: #FFFFFF;
+color: #ffffff;
 width: 325px;
 }
 
@@ -152,14 +159,28 @@ height: 40px;
   border-color:#F3C653;
 }
 
+@media screen and (min-width: 320px) and (max-width: 413px) {
+    .room-hero__arrows{
+    margin-bottom: 88px;
+    }
+    .room-hero__title{
+    width: auto;
+    }
+    .room-hero__text{
+    width: 100%;
+        }
+}
 
 @media screen and (min-width: 1024px) {
     .room-hero__header {
     height: 116px;
     }
-    .hero {
-    padding-top: 450px;
+    .room__hero {
+    padding-top: 340px;
     padding-bottom: 22px;
+    }
+    .room-hero__arrows{
+    margin-bottom: 88px;
     }
     .room-hero__title{
     margin-bottom: 24px;
@@ -193,6 +214,7 @@ height: 40px;
     display: flex;
     flex-direction: row-reverse;
     width:285px;
+    height: 56px;
     align-items: center;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
@@ -206,12 +228,13 @@ height: 40px;
     .room-hero__container{
     position: relative;
     }
-
-    .hero{
-    padding-top: 524px;
+    .room__hero{
+    padding-top: 412px;
     padding-bottom: 48px;
     }
-
+    .room-hero__arrows{
+    margin-bottom: 72px;
+    }
     .room-hero__map{
     display:none;
      }
@@ -219,12 +242,11 @@ height: 40px;
     display:none
     }
     .room-hero__nav{
-      position: absolute;
-      right: 85px;
-      top: 80px;
-    
+    position: absolute;
+    right: 85px;
+    top: 75%;
     }
     .room-hero__title{
     font-size: 36px;
     }
-    }
+}
