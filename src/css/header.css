@@ -134,6 +134,6 @@ a {
         }
         .icon-header:focus,
         .icon-header:hover {
-            fill: #a27c1a;
-        }
+            fill: rgba(243, 198, 83, 0.7);
     }
+}
