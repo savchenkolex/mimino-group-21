@@ -63,6 +63,14 @@
 .contact-fild-box > .tel-fild {
   min-width: 144px;
 }
+.contact-fild {
+  display: inline-flex;
+  width: 260px;
+  align-items: center;
+  background-color: #fff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
 
 .tel {
   font-family: 'Montserrat Regular';
