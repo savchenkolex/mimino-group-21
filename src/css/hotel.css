@@ -168,18 +168,19 @@
   }
   .hotel-block-top {
     display: flex;
+    justify-content: space-evenly;
     margin-bottom: 48px;
   }
   .room_for_3 > .container > .hotel-block-top {
     flex-direction: row-reverse;
   }
-  .hotel-block-text {
+  /* .hotel-block-text {
     margin-right: 26px;
-  }
-  .room_for_3 > .container > .hotel-block-top > .hotel-block-text {
+  } */
+  /* .room_for_3 > .container > .hotel-block-top > .hotel-block-text {
     margin: 0;
     margin-left: 45px;
-  }
+  } */
   .thumb-hotel-img {
     margin: 0;
     margin-top: calc(-32px -72px);
@@ -252,9 +253,9 @@
     margin-bottom: 24px;
     margin-top: 72px;
   }
-  .hotel-block-text {
+  /* .hotel-block-text {
     margin-right: 48px;
-  }
+  } */
   .thumb-hotel-img {
     margin: 0;
     margin-top: calc(-33px - 72px);
