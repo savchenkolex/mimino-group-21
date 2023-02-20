@@ -96,6 +96,17 @@ margin-top: 16px;
     margin-bottom: 10px;
 }
 
+.room-hero__icon{
+  fill: #C79002;
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.room-hero__icon:focus,
+.room-hero__icon:hover {
+  fill: #F3C653;
+}
+
 .room-hero__link{
    display: flex;
    width: 24px;
