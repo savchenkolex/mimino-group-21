@@ -1,17 +1,147 @@
 <section class="main-about-hotel">
-    <h3 class="container">About our hotel</h3>
-    <img src="../img/" alt="Room with grey walls and big bed" width="460"/>
-    <p class="hotel-description-top">Amet minim mollit non</p>
-    <h3>Міміно</h3>
-    <p>
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-      sint. Velit officia consequat duis enim velit mollit. Exercitation
-      veniam consequat sunt nostrud amet.
-    </p>
-    <p class="hotel-discription-bottom">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-      sint. Velit officia consequat duis enim velit mollit. Exercitation
-      veniam consequat sunt nostrud amet.
-    </p>
-    <img src="" alt="Lobby of the hotel" width="460">
-  </section>
+  <div class="container">
+    <h2 class="visually-hidden">About our hotel</h2>
+    <div class="discription-wrap">
+      <p class="hotel-description">Amet minim mollit non</p>
+      <h3 class="logo">Mimiho</h3>
+      <p class="hotel-description-top">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <picture>
+      <source
+        srcset="./img/m-main-room.jpg 1x, ./img/m-main-room-2x.jpg 2x"
+        media="(max-width: 1023px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./img/t-main-room.jpg 1x, ./img/t-main-room-2x.jpg 2x"
+        media="(min-width: 1024px ) and (max-width: 1279px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./img/d-main-hotel-room.jpg    1x,
+          ./img/d-main-hotel-room-2x.jpg 2x
+        "
+        media="(min-width: 1280px )"
+        type="image/jpeg"
+      />
+      <img
+        class="about-hotel-pic-top"
+        src="./img/m-main-room.jpg"
+        alt="Room with grey walls and big bed"
+      />
+    </picture>
+    <div class="bottom-wrap">
+      <p class="hotel-discription-bottom">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <picture>
+        <source
+          srcset="./img/m-lobby.jpg 1x, ./img/m-lobby-2x.jpg 2x"
+          media="(max-width: 1023px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="./img/t-lobby.jpg 1x, ./img/t-lobby-2x.jpg 2x"
+          media="(min-width: 1024px ) and (max-width: 1279px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./img/d-main-hotel-lobby.jpg    1x,
+            ./img/d-main-hotel-lobby-2x.jpg 2x
+          "
+          media="(min-width: 1280px )"
+          type="image/jpeg"
+        />
+        <img
+          class="about-hotel-pic-bottom"
+          src="./img/m-lobby.jpg"
+          alt="Lobby of the hotel"
+        />
+      </picture>
+    </div>
+    <div class="main-slider-wrap">
+      <ul class="main-about-slider">
+        <li class="">
+          <picture>
+            <source
+            srcset="./img/m-main-sink.jpg 1x, ./img/m-main-sink-2x.jpg 2x"
+            media="(max-width: 1023px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./img/t-main-sink.jpg 1x, ./img/t-main-sink-2x.jpg 2x"
+            media="(min-width: 1024px ) and (max-width: 1279px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./img/d-main-sink.jpg 1x,
+              ./img/d-main-sink-2x.jpg 2x
+            "
+            media="(min-width: 1280px )"
+            type="image/jpeg"
+          />
+          <img
+            class="main-hotel-slider-l"
+            src="./img/m-main-sink.jpg"
+            alt="Sink in the bathroom"
+          />
+          </picture>
+        </li>
+        <li class="main-slider-r">
+          <picture>
+            <source
+            srcset="./img/m-main-reg.jpg 1x, ./img/m-main-reg-2x.jpg 2x"
+            media="(max-width: 1023px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./img/t-main-reg.jpg 1x, ./img/t-main-reg-2x.jpg 2x"
+            media="(min-width: 1024px ) and (max-width: 1279px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./img/d-hotel-registration.jpeg 1x,
+              ./img/d-hotel-registration-2x.jpeg 2x
+            "
+            media="(min-width: 1280px )"
+            type="image/jpeg"
+          />
+          <img
+            class="main-hotel-slider-r"
+            src="./img/m-main-reg.jpg"
+            alt="Hotel reception"
+          />
+          </picture>
+        </li>
+      </ul>
+    </div>
+    <div class="main-button-wrap">
+      <ul class="main-button-list">
+        <li class="main-button-item">
+          <button class="slider-button-l" type="button">
+            <svg class="button-icon" width="32" height="32">
+              <use href="img/icons.svg#cil_arrow-left-black"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="main-button-item">
+          <button class="slider-button-r" type="button">
+            <svg  class="button-icon" width="32" height="32">
+              <use href="img/icons.svg#cil_arrow-right-black"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
