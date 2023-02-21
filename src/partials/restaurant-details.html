@@ -29,13 +29,23 @@
             />
           </li>
           <li class="food-list-meat">
-            <img
-            srcset="./img/restaurant-details/meat-3-2x.jpg 2x"
+            <picture>
+            <source
+            srcset="./img/restaurant-details/meat-3half.jpg, ./img/restaurant-details/meat-3half-3@2x.jpg 2x"
+            media="(min-width: 1024px ) and (max-width: 1279px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./img/restaurant-details/meat-3-1x.jpg, ./img/restaurant-details/meat-3-2x.jpg 2x"
+            media="(min-width: 1280px )"
+            type="image/jpeg"
+          />
+          <img
+            class=""
             src="./img/restaurant-details/meat-3-1x.jpg"
-            alt="eat-3"
-            width="270"
-            height="270"
-          /> 
+            alt="meat"
+          />
+          </picture>
           </li>
         </ul>
         <div class="swipe-arrow-hotel">
