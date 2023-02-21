@@ -66,6 +66,9 @@
 .contact-fild-box > .tel-fild {
   min-width: 144px;
 }
+.tel-fild {
+  color: red;
+}
 
 .contact-fild {
   display: inline-flex;
@@ -74,17 +77,26 @@
   background-color: #fff;
   border: 0.5px solid #f3c653;
   border-radius: 2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #494848;
 
 }
 .hotel {
   margin-left: 28px;
+  padding-left: 8px;
 }
 
 .tel {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #494848;
 
@@ -108,14 +120,35 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #494848;
+}
+.contacts-maps {
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 414px) {
   .contact-title {
     margin-right: 21px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding: 0 47px;
+  }
+  .contacts-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 85px;
   }
 }
