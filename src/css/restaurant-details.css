@@ -1,8 +1,23 @@
 /* Section Restaraunt-details Іван Івановський */
 .container-restaurant-details {
+position: relative;
+
+ }
+
+@media screen and (min-width:1024px) {
+  .container-restaurant-details{
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row-reverse;
+    align-items: end;
+  }
+}  
+.details-food {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: end;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .restaurant-details {
@@ -12,60 +27,132 @@
   background-position: center center;
   background-size: cover;
   background-color: var(--color-primary);
-  padding-top: 48px;
+  padding-top: 24px;
   padding-bottom: 40px;
   width: auto;
   display: flex;
   justify-content: space-around;
 }
 
+
+@media screen and (min-width:1024px) {
+  .restaurant-details {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+} 
+
 .restaurant-details-title {
-  font-family: 'FilmP3Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
-  color: #ffffff;
-  margin-bottom: 16px;
+font-family: 'FilmP3Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: #FFFFFF;
+margin-bottom: 12px;
 }
 
+
+@media screen and (min-width:1024px) {
+  .restaurant-details-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.07;
+    margin-bottom: 16px;
+  }
+}  
+
 .restaurant-details-second-title {
+  margin-bottom: 20px;
   font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 8px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
+
+@media screen and (min-width:1024px) {
+  .restaurant-details-title{
+ 
+  margin-bottom: 8px;
+  }
+}  
+
 
 .restaurant-details-text {
   font-family: 'Montserrat SemiBold';
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #bababa;
-  width: 610px;
-  margin-bottom: 40px;
+  width: 259px;
 }
 
+@media screen and (min-width:1024px) {
+  .restaurant-details-text{
+    font-size: 16px;
+    line-height: 1.25;
+    width: 610px;
+    margin-bottom: 40px;
+  }
+} 
+
+.restoraunt-details-pictures{
+  position: relative;
+  
+}
 .food-list {
+  position: relative;
   display: flex;
-  gap: 87px;
+  gap: 20px;
+ 
+} 
+.food-list-picture1{
+  margin-right: auto;
+  margin-left: 40px;
+} 
+
+.food-list-picture2{
+  position: absolute;
+  width: 80px;
+  height: 245px;
 }
 
-.button-menu {
-  margin-right: 32px;
-  padding-bottom: 60px;
+
+
+.food-list-picture3{
+  display: none;
+}
+@media screen and (min-width:1024px) {
+.food-list-picture3{
+ display: block;
+} 
 }
 
-.restaurant-details-list-button {
-  display: block;
-  margin-top: 16px;
+
+
+@media screen and (min-width:1024px) {
+  .button-menu{
+   margin-right: 32px;
+   padding-bottom: 60px;
+} 
+}
+.button-menu{
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-around;
+}
+.restaurant-details-list-button:first-child {
+  margin-bottom: 16px;
 }
 
 .restaurant-details-button {
@@ -96,8 +183,10 @@
 }
 
 .swipe-navigation-list {
+  margin-left: 40px;
   display: flex;
-  margin-top: 24px;
+  justify-content: flex-start;
+  margin-top: 16px;
   gap: 32px;
 }
 
