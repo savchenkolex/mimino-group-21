@@ -1,0 +1,190 @@
+.top-paragr-resto{ font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+font-size: 20px;
+line-height: 1.15;
+color: #B4B4B4;
+    }
+.chairs-and-paragr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* paragraphes about restourant-resto */
+.paragr-about-restourant-resto{
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #7A7A7A;
+}
+.div-about-chairs{
+    max-width: 168px;
+}
+.about-chairs{
+    margin-left: auto;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #C79002;
+}
+.headlines-mimino{
+    margin-bottom: 12px;
+    font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.075;
+/* identical to box height */
+
+letter-spacing: 0.3em;
+
+color: #494848;
+}
+.images-shadow-resto{
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px #00000040;
+
+    }
+    .restourant-list-resto{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: flex-end;
+        gap: 24px;
+     }
+    .arrow-swiper{
+        gap: 34px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* -----MOBILE MEDIA------ */
+    @media  screen and (min-width: 414px) and (max-width: 1023px){
+
+        
+    .about-resto{
+        background-color: var(--fon-lemon);
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    /* headline-mimino */
+    .div-two-resto{
+        width: 258px;
+        margin-bottom: 28px;
+    }
+    .images-div-resto{
+        display: flex;
+        justify-content: flex-end;
+    }
+    }
+
+/*-----------MEDIA_TABLET--------------- */
+
+@media  screen and (min-width: 1024px){
+    .about-resto > .container{
+        padding-left: 47px;
+        padding-right: 60px;
+    }
+/* section */
+.about-resto{
+    padding-top: 120px;
+    padding-bottom: 32px;
+}
+.top-paragr-resto{
+font-weight: 400;
+font-size: 32px;
+line-height: 1.15;
+color: #B4B4B4;
+}
+.headlines-mimino{
+font-weight: 700;
+font-size: 64px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: #494848;
+
+}
+.div-two-resto{
+    margin-bottom: 142px;
+    width: 439px;
+}
+/* paragraphes bottom MIMINO */
+.paragr-about-restourant-resto{
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+color: #7A7A7A;
+
+}
+/* -------div-about-chairs--------- */
+
+.div-about-chairs{
+    margin-left: 48px;
+    max-width: 312px;
+}
+.about-chairs{
+    margin-left: auto;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: var(--brown);
+
+}
+.chairs-and-paragr{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.about-resto{
+    font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+/* Brown */
+
+}
+
+.images-div-resto{
+    margin-left: auto;
+    position: absolute;
+    top: 43em;
+    right: 112px;
+}
+/* ---------------restourant list-resto --------------*/
+.restourant-list-resto{
+    margin-bottom: 32px;
+    gap: 40px;
+ }
+ /* ------arrow list----------- */
+
+}
+/* ------MEDIA DESKTOP---------- */
+@media  screen and (min-width: 1280px){
+    .images-div-resto{
+        right: 180px;
+    }
+
+    /* -----весь верхний текст------- */
+    .div-two-resto{
+        width: 518px;
+        margin-bottom: 162px;
+    }
+    /* -----желтый цвет напроив мяса------- */
+    .div-about-chairs{
+        margin-left: 32px;
+    }
+    .about-resto > .container{
+        padding: 0 85px;
+    }
+    /* ------ slider-------- */
+    .restourant-list-resto{
+        margin-bottom: 40px;
+    }
+}
