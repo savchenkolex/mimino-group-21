@@ -6,24 +6,25 @@
     margin-right: auto;
     padding-top: 181px;
     padding-bottom: 20px;
-
+    text-align: center;
+}
+.hero-m {
     background-color: var(--accent-color);
     background-image: linear-gradient( 
         to right,
         rgba(0, 0, 0, 0.65),
         rgba(0, 0, 0, 0.65)),
-        url('../img/hero/restaurant-hero-mobile-1x.jpg');
+        url('../img/hero/mainpage-hero-mobile-1x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    text-align: center;
 }
 @media screen and (min-device-pixel-ratio: 2),
 screen and (-webkit-min-device-pixel-ratio: 2), 
 screen and (min-resolution: 192dpi), 
 screen and (min-resolution: 2dppx) {
-    .hero {
+    .hero-m {
         background-image: linear-gradient( 
             to right,
             rgba(0, 0, 0, 0.65),
@@ -152,7 +153,7 @@ screen and (min-resolution: 2dppx) {
 }
 .icon-header:focus,
 .icon-header:hover {
-    fill: rgba(243, 198, 83, 0.7);
+    fill: #C79002;
 }
 
 
@@ -162,6 +163,8 @@ screen and (min-resolution: 2dppx) {
     height: 720px;
     padding-top: 188px;
     padding-bottom: 15px;
+}
+.hero-m {
     background-image: linear-gradient( 
         to right,
         rgba(0, 0, 0, 0.65),
@@ -172,7 +175,7 @@ screen and (min-resolution: 2dppx) {
 screen and (-webkit-min-device-pixel-ratio: 2), 
 screen and (min-resolution: 192dpi), 
 screen and (min-resolution: 2dppx) {
-    .hero {
+    .hero-m {
         background-image: linear-gradient( 
             to right,
             rgba(0, 0, 0, 0.65),
@@ -230,7 +233,9 @@ screen and (min-resolution: 2dppx) {
     .hero {
         padding-top: 164px;
         padding-bottom: 64px;
-        background-image: linear-gradient( 
+}
+.hero-m {
+    background-image: linear-gradient( 
         to right,
         rgba(0, 0, 0, 0.65),
         rgba(0, 0, 0, 0.65)),
@@ -240,7 +245,7 @@ screen and (min-resolution: 2dppx) {
 screen and (-webkit-min-device-pixel-ratio: 2), 
 screen and (min-resolution: 192dpi), 
 screen and (min-resolution: 2dppx) {
-    .hero {
+    .hero-m {
         background-image: linear-gradient( 
             to right,
             rgba(0, 0, 0, 0.65),

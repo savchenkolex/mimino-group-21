@@ -155,7 +155,7 @@ letter-spacing: 0.02em;
     margin-left: auto;
     position: absolute;
     top: 43em;
-    left: 512px;
+    right: 112px;
 }
 /* ---------------restourant list-resto --------------*/
 .restourant-list-resto{
@@ -168,7 +168,7 @@ letter-spacing: 0.02em;
 /* ------MEDIA DESKTOP---------- */
 @media  screen and (min-width: 1280px){
     .images-div-resto{
-        left: 640px;
+        right: 180px;
     }
 
     /* -----весь верхний текст------- */

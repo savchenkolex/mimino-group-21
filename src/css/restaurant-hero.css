@@ -1,0 +1,66 @@
+.hero-r {
+    background-color: var(--accent-color);
+    background-image: linear-gradient( 
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url('../img/hero/restaurant-hero-mobile-1x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-resolution: 192dpi), 
+screen and (min-resolution: 2dppx) {
+    .hero-r {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/hero/restaurant-hero-mobile-2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-r {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/hero/restaurant-hero-tablet-1x.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-r {
+            background-image: linear-gradient( 
+                to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../img/hero/restaurant-hero-tablet-2x.jpg');
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-r {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/hero/restaurant-hero-1x.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-r {
+            background-image: linear-gradient( 
+                to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../img/hero/restaurant-hero-2x.jpg');
+        }
+    }
+}
