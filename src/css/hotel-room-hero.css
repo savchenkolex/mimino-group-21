@@ -1,4 +1,10 @@
 /* Hotel room hero Буркова Анна  */
+.header-room-hotel {
+background: linear-gradient (180deg, #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%);
+}
+
 .room__hero{
     padding-top:350px;
     padding-bottom: 14px;
