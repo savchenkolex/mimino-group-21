@@ -56,8 +56,10 @@
 }
 
 .restaurant-menu-table {
+
   width: 100%;
   margin-bottom: 16px;
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,7 +95,7 @@ margin-bottom: 20px;
   line-height: 1.21;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  
+  max-width: 223px;
  }
 
 @media screen and (min-width: 1280px) {
@@ -101,9 +103,29 @@ margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 12px;
+    min-width: 317px;
   }
 }
 
+.restaurant-menu-garnish {
+  max-width: 216px;
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu-garnish {
+    min-width: 317px;
+  }
+}
+
+.restaurant-menu-salad {
+  max-width: 226px;
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-menu-salad {
+    min-width: 257px;
+  }
+}
 
 
 .restaurant-menu-ingredients {
@@ -121,6 +143,7 @@ margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .restaurant-menu-price {
@@ -133,8 +156,9 @@ margin-bottom: 20px;
 
 .restaurant-menu-desert-drinks {
 margin-bottom: 11px;
-min-width: 255px;
+min-width: 220px;
 }
+
 
 .restaurant-menu-button {
   margin-right: auto;
