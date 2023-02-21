@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/dropdown-baa03a23.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-f9647332.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-fbb36183.css">
   </head>
   <body>
 <!-- Victoria R -->
@@ -155,11 +155,12 @@
 </div>
 </section>
 
-    <section class="restaurant-details">
+    <!-- Section Restaraunt-details Іван Івановський -->
+<section class="restaurant-details">
   <div class="container">
     <div class="container-restaurant-details">
       <div class="details-food">
-        <h1 class="restaurant-details-title">міміно</h1>
+        <h1 class="restaurant-details-title">mimiho</h1>
         <h2 class="restaurant-details-second-title">Ресторан</h2>
         <p class="restaurant-details-text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -185,28 +186,38 @@
             />
           </li>
           <li class="food-list-meat">
-            <img
-              srcset="/mimino-group-21/assets/meat-3-2x-0bf54655.jpg 2x"
-              src="/mimino-group-21/assets/meat-3-1x-0a09210f.jpg"
-              alt="eat-3"
-              width="270"
-              height="270"
-            />
+            <picture>
+            <source
+            srcset="/mimino-group-21/assets/meat-3half-36aa23ac.jpg , /mimino-group-21/assets/meat-3half-3@2x-f0da0db9.jpg 2x"
+            media="(min-width: 1024px ) and (max-width: 1279px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="/mimino-group-21/assets/meat-3-1x-0a09210f.jpg , /mimino-group-21/assets/meat-3-2x-0bf54655.jpg 2x"
+            media="(min-width: 1280px )"
+            type="image/jpeg"
+          />
+          <img
+            class=""
+            src="/mimino-group-21/assets/meat-3-1x-0a09210f.jpg"
+            alt="meat"
+          />
+          </picture>
           </li>
         </ul>
-        <div class="swipe-arrow">
-          <ul class="swipe-navigation-list">
+        <div class="swipe-arrow-hotel">
+          <ul class="swipe-navigation-list-hotel">
             <li class="swipe-arrow">
               <button class="arrow-btn" type="button">
                 <svg class="arrow-icons" width="32" height="32">
-                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-white"></use>
+                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use>
                 </svg>
               </button>
             </li>
             <li class="swipe-arrow">
               <button class="arrow-btn" type="button">
                 <svg class="arrow-icons" width="32" height="32">
-                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-white"></use>
+                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use>
                 </svg>
               </button>
             </li>
@@ -374,12 +385,13 @@
   </div>
 </section>
 
-    <section class="hotel-details">
+    <!-- Section Hotel-details Іван Івановський -->
+<section class="hotel-details">
   <div class="container">
     <div class="container-hotel-details">
       <div class="details-room">
         <div class="details-room-title">
-          <h1 class="hotel-details-title">міміно</h1>
+          <h1 class="hotel-details-title">mimiho</h1>
           <h2 class="hotel-details-second-title">Готель</h2>
         </div>
         <p class="hotel-details-text">
@@ -388,13 +400,23 @@
         </p>
         <ul class="room-list">
           <li class="room-list-hotel">
-            <img
-              srcset="/mimino-group-21/assets/hotel-room-2x-05389aba.jpg 2x"
-              src="/mimino-group-21/assets/hotel-room-1x-4af52283.jpg"
-              alt="eat-1"
-              width="270"
-              height="270"
+            <picture>
+              <source
+              srcset="/mimino-group-21/assets/hotel-reception-2-1x-19d5cba3.jpg 1x, /mimino-group-21/assets/hotel-reception-2@2x-2d89164e.jpg 2x"
+              media="(min-width: 1024px ) and (max-width: 1279px)"
+              type="image/jpeg"
             />
+            <source
+              srcset="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg 1x, /mimino-group-21/assets/hotel-reception-3@2x-7dbb42e0.jpg 2x"
+              media="(min-width: 1280px )"
+              type="image/jpeg"
+            />
+            <img
+              class=""
+              src="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg"
+              alt="image/jpeg"
+            />
+            </picture>
           </li>
           <li class="room-list-hotel">
             <img
@@ -406,28 +428,29 @@
             />
           </li>
           <li class="room-list-hotel">
-            <img
-              srcset="/mimino-group-21/assets/hotel-reception-2x-50dd39d4.jpg 2x"
-              src="/mimino-group-21/assets/hotel-reception-1x-3daf7e0d.jpg"
-              alt="eat-3"
+          <img
+              srcset="/mimino-group-21/assets/hotel-room-2x-05389aba.jpg 2x"
+              src="/mimino-group-21/assets/hotel-room-1x-4af52283.jpg"
+              alt="eat-1"
               width="270"
               height="270"
             />
-          </li>
+        </li>
+      </li>
         </ul>
         <div class="swipe-arrow-hotel">
           <ul class="swipe-navigation-list-hotel">
             <li class="swipe-arrow">
               <button class="arrow-btn" type="button">
                 <svg class="arrow-icons" width="32" height="32">
-                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-white"></use>
+                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use>
                 </svg>
               </button>
             </li>
             <li class="swipe-arrow">
               <button class="arrow-btn" type="button">
                 <svg class="arrow-icons" width="32" height="32">
-                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-white"></use>
+                  <use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use>
                 </svg>
               </button>
             </li>
