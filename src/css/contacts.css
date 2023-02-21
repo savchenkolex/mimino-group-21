@@ -8,7 +8,8 @@
 }
 
 .contacts-wrapper {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts-title-top {
