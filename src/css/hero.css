@@ -111,6 +111,7 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 24px;
 }
 .reserve-button-hero {
+    display: inline-block;
     padding: 14px 24px;
     font-family: 'Montserrat';
     font-style: normal;
