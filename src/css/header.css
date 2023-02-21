@@ -1,13 +1,20 @@
 /* header */
-/* a {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+
+
+/* Затемнення в header for room-hotel */
+/* .header-room-hotel {
+    background: linear-gradient
+    (180deg, #000000 0%, 
+    rgba(0, 0, 0, 0.55) 54.17%, 
+    rgba(0, 0, 0, 0) 100%);
 } */
+
+
+
 .header {
     position: absolute;
     width: 100%;
-    top: 16px;
+    /* top: 16px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +53,10 @@
 }
 .a-nav:focus,
 .a-nav:hover {
-    color: #c79d31;
+    color: #C79002;
+}
+.icon-tel-header {
+    display: none;
 }
 .tel-header {
     display: none;
@@ -56,7 +66,11 @@
     display: none;
 }
 
-    
+@media screen and (min-width: 414px) {
+    .icon-tel-header {
+        display: contents;
+    }
+}
     
     @media screen and (min-width: 1024px) {
         .header {
@@ -135,6 +149,7 @@
         }
         .icon-header:focus,
         .icon-header:hover {
-            fill: rgba(243, 198, 83, 0.7);
+            fill: #C79002;
+            ;
     }
 }
