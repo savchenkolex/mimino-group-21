@@ -93,7 +93,7 @@
             content: "";
             height: 24px;
             width: 24px;
-            background-image: url("./img/icon-tel.svg");
+            background-image: url("../img/icon-tel.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
