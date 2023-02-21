@@ -55,7 +55,7 @@ color: #494848;
         margin-bottom: 20px;
         justify-content: flex-end;
         gap: 24px;
-     }
+    }
     .arrow-swiper{
         gap: 34px;
         display: flex;
@@ -107,6 +107,7 @@ letter-spacing: 0.3em;
 color: #494848;
 
 }
+
 .div-two{
     margin-bottom: 142px;
     width: 439px;
@@ -155,12 +156,13 @@ letter-spacing: 0.02em;
     margin-left: auto;
     position: absolute;
     top: 43em;
-    left: 512px;
+    right: 112px;
 }
 /* ---------------restourant list --------------*/
 .restourant-list{
     margin-bottom: 32px;
     gap: 40px;
+    
  }
  /* ------arrow list----------- */
 
@@ -168,7 +170,7 @@ letter-spacing: 0.02em;
 /* ------MEDIA DESKTOP---------- */
 @media  screen and (min-width: 1280px){
     .images-div{
-        left: 640px;
+        right: 149px;
     }
 
     /* -----весь верхний текст------- */
