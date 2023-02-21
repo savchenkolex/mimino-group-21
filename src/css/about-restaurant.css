@@ -14,7 +14,7 @@ color: #B4B4B4;
 }
 /* paragraphes about restourant-resto */
 .paragr-about-restourant-resto{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat SemiBold';
 font-weight: 600;
 font-size: 12px;
 line-height: 1.25;
@@ -90,6 +90,7 @@ color: #494848;
     }
 /* section */
 .about-resto{
+    position: relative;
     padding-top: 120px;
     padding-bottom: 32px;
 }
@@ -154,7 +155,7 @@ letter-spacing: 0.02em;
 .images-div-resto{
     margin-left: auto;
     position: absolute;
-    top: 43em;
+    top: -24px;
     right: 112px;
 }
 /* ---------------restourant list-resto --------------*/
