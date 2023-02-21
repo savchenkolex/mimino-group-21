@@ -1,0 +1,78 @@
+.hero-h {
+    background-color: var(--accent-color);
+    background-image: linear-gradient( 
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url('../img/room-hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p-hero-h {
+    display: none;
+}
+.h-hero-h {
+    margin-bottom: 178px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-resolution: 192dpi), 
+screen and (min-resolution: 2dppx) {
+    .hero-h {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/room-hero-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-h {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/room-hero-tablet.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-h {
+            background-image: linear-gradient( 
+                to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../img/room-hero-tablet@2x.jpg');
+        }
+    }
+    .h-hero-h {
+        margin-bottom: 218px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero-h {
+        background-image: linear-gradient( 
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+            url('../img/room-hero-desktop.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-h {
+            background-image: linear-gradient( 
+                to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url('../img/room-hero-desktop@2x.jpg');
+        }
+    }
+    .h-hero-h {
+        margin-bottom: 242px;
+    }
+}
