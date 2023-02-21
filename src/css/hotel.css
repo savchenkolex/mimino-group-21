@@ -307,16 +307,18 @@
     line-height: 20px;
     width: 439px;
     margin-bottom: 0px;
+  }  
+  .room_for_2{
+    padding-bottom: 104px;
   }
+}
+@media screen and (min-width:1024px) and (max-width: 1280px){
   .room_for_2 >
   .container >
   .hotel-block-bottom >
   .hotel-block-slider > 
   .hotel-block-slider-qw{
     display: none;
-  }
-  .room_for_2{
-    padding-bottom: 104px;
   }
 }
 @media screen and (min-width: 1280px) {
