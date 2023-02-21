@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/dropdown-baa03a23.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-8abb75bb.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-f5909155.css">
   </head>
   <body>
 <header>
@@ -71,10 +71,10 @@
       </a>
   <ul class="reserve-ul-hero">
       <li class="reserve-li-hero">
-          <button class="reserve-button-hero js-open-modal" type="button" data-modal="2">Забронювати номер</button>
+          <button class="reserve-button-hero js-open-modal" type="button" data-modal="1">Забронювати номер</button>
       </li>
       <li class="reserve-li-hero">
-          <button class="reserve-button-hero js-open-modal" type="button" data-modal="1">Переглянути ціни</button>
+          <button class="reserve-button-hero js-open-modal" type="button" data-modal="3">Переглянути ціни</button>
       </li>
   </ul>
   </div>
@@ -191,13 +191,17 @@
         </ul>
         <div class="hotel-block-slider-qw">
           <ul class="group-hotel-slider">
-           <li class="list-hotel-slider">
-            <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use></svg>
+            <li class="list-hotel-slider">
+             <button class="button-slider">
+             <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use></svg>
+           </button>
            </li>
-           <li class="list-hotel-slider">
-            <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
-           </li>
-          </ul>
+            <li class="list-hotel-slider">
+             <button class="button-slider">
+               <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
+             </button>
+             </li>
+           </ul>
           </div>
       </div>
       <div class="hotel-block-button">
@@ -308,13 +312,17 @@
           </ul>
           <div class="hotel-block-slider-qw sect-room_for_3">
             <ul class="group-hotel-slider">
-             <li class="list-hotel-slider">
-              <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use></svg>
+              <li class="list-hotel-slider">
+               <button class="button-slider">
+               <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use></svg>
+             </button>
              </li>
-             <li class="list-hotel-slider">
-              <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
-             </li>
-            </ul>
+              <li class="list-hotel-slider">
+               <button class="button-slider">
+                 <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
+               </button>
+               </li>
+             </ul>
             </div>
         </div>
       <div class="hotel-block-button">
@@ -375,7 +383,6 @@
     </div>
     <div class="hotel-block-bottom">
       <div class="hotel-block-slider">
-        <div class="hotel-block-slider">
           <ul class="hotel-group-img-slider">
             <li class="hotel-list-img-slider">
               <picture>
@@ -425,22 +432,26 @@
           <div class="hotel-block-slider-qw">
             <ul class="group-hotel-slider">
              <li class="list-hotel-slider">
+              <button class="button-slider">
               <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-left-black"></use></svg>
-             </li>
+            </button>
+            </li>
              <li class="list-hotel-slider">
-              <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
-             </li>
+              <button class="button-slider">
+                <svg width="32" height="32"><use href="/mimino-group-21/assets/icons-c025d945.svg#cil_arrow-right-black"></use></svg>                    
+              </button>
+              </li>
             </ul>
             </div>
         </div>
-      </div>
       <div class="hotel-block-button">
         <ul class="group-button-hotel-section">
           <li class="list-button-hotel-section">
             <a class="button-hotel-about" href="./room-page.html">Детальніше</a>
           </li>
           <li class="list-button-hotel-section">
-            <button class="button-hotel-room_price js-open-modal">
+            <button class="button-hotel-room_price js-open-modal"
+            data-modal="3">
               Переглянути ціни
             </button>
           </li>
