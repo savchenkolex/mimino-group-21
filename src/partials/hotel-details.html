@@ -11,46 +11,64 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
-        <ul class="room-list">
-          <li class="room-list-hotel">
-            <picture>
-              <source
-              srcset="./img/hotel-details/hotel-reception-2-1x.jpg 1x, ./img/hotel-details/hotel-reception-2@2x.jpg 2x"
-              media="(min-width: 1024px ) and (max-width: 1279px)"
-              type="image/jpeg"
-            />
-            <source
-              srcset="./img/hotel-details/hotel-recepion-3.jpg 1x, ./img/hotel-details/hotel-reception-3@2x.jpg 2x"
-              media="(min-width: 1280px )"
-              type="image/jpeg"
-            />
-            <img
-              class=""
-              src="./img/hotel-details/hotel-recepion-3.jpg"
-              alt="image/jpeg"
-            />
-            </picture>
-          </li>
-          <li class="room-list-hotel">
-            <img
-              srcset="./img/hotel-details/hotel-breakfast-2x.jpg 2x"
-              src="./img/hotel-details/hotel-breakfast-1x.jpg"
-              alt="eat-2"
-              width="162"
-              height="270"
-            />
-          </li>
-          <li class="room-list-hotel">
-          <img
-              srcset="./img/hotel-details/hotel-room-2x.jpg 2x"
-              src="./img/hotel-details/hotel-room-1x.jpg"
-              alt="eat-1"
-              width="270"
-              height="270"
-            />
-        </li>
-      </li>
-        </ul>
+        <div class="room-list-container">
+          <ul class="room-list">
+            <li class="room-list-hotel">
+              <picture>
+                <source
+                  srcset="
+                    ./img/hotel-details/hotel-reception-2-1x.jpg 1x,
+                    ./img/hotel-details/hotel-reception-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./img/hotel-details/hotel-recepion-3.jpg     1x,
+                    ./img/hotel-details/hotel-reception-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="reception-img"
+                  src="./img/hotel-details/hotel-recepion-3.jpg"
+                  alt="image/jpeg"
+                />
+              </picture>
+            </li>
+            <li class="room-list-hotel">
+              <picture>
+                <source
+                  class="plant-mobile-img"
+                  srcset="
+                    ./img/hotel-details/plant-mobile-1x.jpg 1x,
+                    ./img/hotel-details/plant-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 414px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="img-breacfast lant-mobile-img"
+                  src="./img/hotel-details/hotel-breakfast-1x.jpg"
+                  alt="eat-2"
+                  width="162"
+                  height="270"
+                />
+              </picture>
+            </li>
+            <li class="room-list-hotel">
+              <img
+                srcset="./img/hotel-details/hotel-room-2x.jpg 2x"
+                src="./img/hotel-details/hotel-room-1x.jpg"
+                alt="eat-1"
+                width="270"
+                height="270"
+              />
+            </li>
+          </ul>
+        </div>
         <div class="swipe-arrow-hotel">
           <ul class="swipe-navigation-list-hotel">
             <li class="swipe-arrow">
