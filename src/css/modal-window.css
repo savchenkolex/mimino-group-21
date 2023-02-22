@@ -397,6 +397,7 @@
     order: 1;
   }
 
+  .form-group.price,
   .modal-label.price {
     width: calc((100% - 16px) / 2);
     margin-bottom: 0;
