@@ -4,21 +4,39 @@
       <use href="./img/icons.svg#x"></use>
     </svg>
   </button>
-  <h1 class="modal-header">ЦІНИ НА НОМЕР</h1>
+  <h2 class="modal-header">ЦІНИ НА НОМЕР</h2>
   <p class="modal-paragraph">Двомісний люкс</p>
   <p class="modal-label-text room-category">Категорія номеру</p>
   <form class="modal-form">
-    <label class="modal-label price">
+    <!-- <label class="modal-label price">
       <input
         type="number"
         name="sum-nights"
         class="modal-input"
         placeholder="1"
         required
-        pattern=""
       />
       <span class="modal-label-text">Кількість ночей</span>
-    </label>
+    </label> -->
+    <div class="form-group price">
+      <div class="dropdown">
+        <button class="dropdown-button">2</button>
+        <ul class="dropdown-list">
+          <li class="dropdown-list-item" data-value="1">1</li>
+          <li class="dropdown-list-item" data-value="2">2</li>
+          <li class="dropdown-list-item" data-value="3">3</li>
+          <li class="dropdown-list-item" data-value="4">7</li>
+        </ul>
+        <input
+          type="text"
+          name="number-persons"
+          value=""
+          class="dropdown-input-hidden"
+          required
+        >
+      </div>
+      <span class="modal-label-text">Кількість ночей</span>
+    </div>
     <label class="modal-label price">
       <input
         type="number"
@@ -26,8 +44,8 @@
         class="modal-input"
         placeholder="1000"
         required
-        pattern=""
-      />
+        min="1"
+      >
       <span class="modal-label-text">грн</span>
     </label>
     <button type="submit" class="modal-submit buttons">
