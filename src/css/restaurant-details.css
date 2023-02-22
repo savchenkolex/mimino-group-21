@@ -12,14 +12,15 @@ flex-direction: column;
     display: flex;
     flex-wrap: nowrap; 
     /* flex-direction: row-reverse; */
-    align-items: end;
+    
   }
 }  
-@media screen and (min-width:1280px) {
-  .container-restaurant-details {
-          display: flex;
-          flex-wrap: nowrap;
-          align-items: end;
+@media screen and (min-width:1024px) {
+  .food-details-booking {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
         }
 }
 
@@ -163,10 +164,7 @@ margin-bottom: 12px;
     margin-bottom: 40px;
   }
 } 
-.restoraunt-details-pictures {
-  position: relative;
-  
-}
+
 
 .food-list {
   position: relative;
@@ -176,10 +174,9 @@ margin-bottom: 12px;
 @media screen and (min-width:1024px) {
 .food-list {
   flex-direction: row-reverse;
-    gap: 84px;
+    gap: 0px;
   }
 }
-
 
 
 .food-list-picture1 {
@@ -205,6 +202,7 @@ margin-bottom: 12px;
 
 
 @media screen and (min-width:1024px) {
+
   .food-list-picture1 {
   display: none;
     }
