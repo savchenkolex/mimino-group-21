@@ -1,15 +1,21 @@
-.contacts-maps {
- 
-}
 
 .section-contacts {
   background-color: var(--fon-lemon);
-  padding: 36px 15px 32px 15px;
 }
 
 .contacts-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   display: flex;
   flex-wrap: wrap;
+  
+}
+
+.contacts-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .contacts-title-top {
@@ -17,9 +23,6 @@
 }
 
 .logo-text {
-  font-size: 40px;
-  line-height: 1.07;
-
   margin-bottom: 12px;
 }
 
@@ -30,14 +33,14 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: var(--text-gray);
 }
 
-.top {
+/* .top {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-}
+} */
 
 
 .contact-title {
@@ -77,9 +80,7 @@
   border-radius: 2px;
 
 }
-.hotel {
-  margin-left: 28px;
-}
+
 
 .tel {
   font-family: 'Montserrat Regular';
@@ -93,19 +94,12 @@
   padding-right: 8px;
 }
 
-.contact-map {
-  /* margin-top: 16px;
-  margin-left: 124px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 33px; */
-  
+/* .contact-map {
   margin-top: 16px;
   margin-left: 124px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
   padding: 8px 8px 8px 16px;
-  /* margin: 0; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -113,10 +107,20 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #494848;
+} */
+
+.googlemaps-link {
+  cursor:pointer;
 }
 
-@media screen and (min-width: 414px) {
-  .contact-title {
-    margin-right: 21px;
-  }
+@media screen and (min-width:1024px) {
+  .photo-maps {
+    width: 535px;
+  } 
+}
+
+@media screen and (min-width:1280px) {
+  .photo-maps {
+    width: 634px;  
+  } 
 }
