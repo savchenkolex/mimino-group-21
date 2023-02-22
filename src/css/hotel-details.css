@@ -165,10 +165,10 @@
 /* TABLET */
 
 @media screen and (min-width: 1024px) {
-  .container {
+  /* .container {
     width: 100%;
-    margin: 0;
-  }
+   
+  } */
   .container-hotel-details {
     flex-direction: row;
   }
@@ -303,10 +303,10 @@
 /* DESCTOP */
 
 @media screen and (min-width: 1280px) {
-  .container {
+  /* .container {
     width: 1280px;
     padding: 0;
-  }
+  } */
 
   .container-hotel-details {
     display: flex;
