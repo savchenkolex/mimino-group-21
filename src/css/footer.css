@@ -5,7 +5,9 @@
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 26px;
+  justify-content: center;
+  gap: 85px;
+  padding: 40px 0px;
 }
 
 .footer-logo-box {
@@ -18,6 +20,15 @@
 .footer-logo-box .logo-text {
   font-size: 40px;
 }
+
+.footer-logo-box .logo-link {
+  transition: color var(--timing-function);
+}
+
+.footer-logo-box .logo-link:hover,
+.footer-logo-box .logo-link:focus {
+  color: var(--brown);
+} 
 
 .footer-links-box {
   display: flex;
@@ -44,31 +55,36 @@
   letter-spacing: 0.02em;
   display: block;
   cursor: pointer;
+  transition: color var(--timing-function);
+}
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--brown);
 }
 
 .footer-soc-link {
   border: none;
+  fill: var(--akzent-yellow);
+  transition: background-color var(--timing-function),
+              color var(--timing-function)
+              fill var(--timing-function);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  fill: var(--brown);
 }
 
 .footer-soc-name {
   display: none;
 }
 
-.icon-footer {
-  fill: var(--akzent-yellow);
-}
-
-
-@media screen and (min-width: 414px) {
-  
-  
-}
 
 @media screen and (min-width: 1024px) {
   .footer-container {
-   padding: 80px 75px;
-   justify-content: space-around;
+   padding: 80px 0px;
+   gap: 164px;
   }
 
   .footer-links-box {
@@ -87,29 +103,45 @@
 
   .footer-social-list {
     flex-direction: column;
+    gap: 12px;
   }
 
   .footer-soc-link {
-    display: block;
+    padding: 10px 12px;
     border: 0.5px solid var(--akzent-yellow);
-
+    border-radius: 2px;
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
   }
 
+  .footer-soc-link:hover,
+  .footer-soc-link:focus {
+  background-color: var(--akzent-yellow);
+  color: var(--color-footer);
+  fill: var(--color-footer);
+  }
+  
   .footer-soc-name {
-    display: unset;
     font-family: "Montserrat Regular";
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
+    display: block;
   }
-
- 
-
 
 }
 
 @media screen and (min-width: 1280px) {
-  .foooter-container {
- 
+  .footer-container {
+    gap: 230px;
+  }
+
+  .footer-links-box {
+    gap: 200px
   }
  
-
 }
