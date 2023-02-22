@@ -112,7 +112,7 @@ screen and (min-resolution: 2dppx) {
 }
 .reserve-button-hero {
     display: inline-block;
-    padding: 14px 24px;
+    padding: 14px 22px;
     font-family: 'Montserrat Bold';
     font-style: normal;
     font-weight: 700;
