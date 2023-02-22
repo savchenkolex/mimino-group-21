@@ -213,13 +213,25 @@
   .hotel-group-img-slider{
     transform: translateX(130px);    
   }
-  .room_for_2_luxe{
+  /* .room_for_2_luxe{
     overflow: hidden;
   }
   .room_for_3{
     overflow: hidden;
   }
   .room_for_2{
+    overflow: hidden;
+  } */
+  .room_for_2_luxe >
+  .container{
+    overflow: hidden;  
+  }
+  .room_for_3 >
+  .container{  
+    overflow: hidden;  
+  }
+  .room_for_2 >
+  .container{
     overflow: hidden;
   }
 }
