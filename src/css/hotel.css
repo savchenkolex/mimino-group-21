@@ -1,19 +1,16 @@
-@import url('./general.css');
+
 /*#region hotel section  */
 .room_for_2_luxe {
   background-color: var(--fon-lemon);
   padding: 32px 0px;
-  margin: 0 auto;
 }
 .room_for_3 {
   background: var(--fon-dark-lemon);
   padding: 32px 0px;
-  margin: 0 auto;
 }
 .room_for_2 {
   background: var(--fon-lemon);
   padding: 32px 0px;
-  margin: 0 auto;
 }
 /* .room_for_2_luxe >.container,
 .room_for_3 >.container,
@@ -207,12 +204,14 @@
 /*#endregion  */
 /* #region media screen */
 @media  screen and (max-width:1023px) {
-  .hotel-block-slider{
-    margin-left:130px;
+  .hotel-group-img-slider{
     overflow: hidden;
+    transform: translateX(-130px);
   }
-  .hotel-block-slider{
-    margin:0;
+  .hotel-block-bottom.bottom-room_for_3 >
+  .hotel-block-slider >
+  .hotel-group-img-slider{
+    transform: translateX(130px);    
   }
 }
 @media screen and (min-width: 1024px) {
