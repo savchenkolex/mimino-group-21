@@ -12,12 +12,14 @@
 
 
 .header {
+    z-index: 3;
     position: absolute;
     width: 100%;
     /* top: 16px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 16px;
 }
 .logo-header {
     margin-right: 5px;
