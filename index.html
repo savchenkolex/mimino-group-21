@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/mimino-group-21/assets/dropdown-baa03a23.js"></script>
-    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-002805e6.css">
+    <link rel="stylesheet" href="/mimino-group-21/assets/dropdown-e671d2e1.css">
   </head>
   <body>
 <!-- Victoria R -->
@@ -427,46 +427,55 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
-        <ul class="room-list">
-          <li class="room-list-hotel">
-            <picture>
-              <source
-              srcset="/mimino-group-21/assets/hotel-reception-2-1x-19d5cba3.jpg 1x, /mimino-group-21/assets/hotel-reception-2@2x-2d89164e.jpg 2x"
-              media="(min-width: 1024px ) and (max-width: 1279px)"
-              type="image/jpeg"
-            />
-            <source
-              srcset="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg 1x, /mimino-group-21/assets/hotel-reception-3@2x-7dbb42e0.jpg 2x"
-              media="(min-width: 1280px )"
-              type="image/jpeg"
-            />
-            <img
-              class=""
-              src="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg"
-              alt="image/jpeg"
-            />
-            </picture>
-          </li>
-          <li class="room-list-hotel">
-            <img
-              srcset="/mimino-group-21/assets/hotel-breakfast-2x-d155daf0.jpg 2x"
-              src="/mimino-group-21/assets/hotel-breakfast-1x-ba04ea38.jpg"
-              alt="eat-2"
-              width="162"
-              height="270"
-            />
-          </li>
-          <li class="room-list-hotel">
-          <img
-              srcset="/mimino-group-21/assets/hotel-room-2x-05389aba.jpg 2x"
-              src="/mimino-group-21/assets/hotel-room-1x-4af52283.jpg"
-              alt="eat-1"
-              width="270"
-              height="270"
-            />
-        </li>
-      </li>
-        </ul>
+        <div class="room-list-container">
+          <ul class="room-list">
+            <li class="room-list-hotel">
+              <picture>
+                <source
+                  srcset="/mimino-group-21/assets/hotel-reception-2-1x-19d5cba3.jpg 1x, /mimino-group-21/assets/hotel-reception-2@2x-2d89164e.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg 1x, /mimino-group-21/assets/hotel-reception-3@2x-7dbb42e0.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="reception-img"
+                  src="/mimino-group-21/assets/hotel-recepion-3-2fd05584.jpg"
+                  alt="image/jpeg"
+                />
+              </picture>
+            </li>
+            <li class="room-list-hotel">
+              <picture>
+                <source
+                  class="plant-mobile-img"
+                  srcset="/mimino-group-21/assets/plant-mobile-1x-1008508f.jpg 1x, /mimino-group-21/assets/plant-mobile-2x-b7d5223c.jpg 2x"
+                  media="(max-width: 414px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="img-breacfast lant-mobile-img"
+                  src="/mimino-group-21/assets/hotel-breakfast-1x-ba04ea38.jpg"
+                  alt="eat-2"
+                  width="162"
+                  height="270"
+                />
+              </picture>
+            </li>
+            <li class="room-list-hotel">
+              <img
+                srcset="/mimino-group-21/assets/hotel-room-2x-05389aba.jpg 2x"
+                src="/mimino-group-21/assets/hotel-room-1x-4af52283.jpg"
+                alt="eat-1"
+                width="270"
+                height="270"
+              />
+            </li>
+          </ul>
+        </div>
         <div class="swipe-arrow-hotel">
           <ul class="swipe-navigation-list">
             <li class="swipe-arrow">
