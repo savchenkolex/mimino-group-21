@@ -18,7 +18,7 @@
     /* top: 16px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 16px;
 }
 .logo-header {
@@ -127,8 +127,8 @@
     
     @media screen and (min-width: 1280px) {
         .header {
-            justify-content: space-between;
-            padding-left: 85px;
+            /* justify-content: space-between; */
+            /* padding-left: 85px; */
             padding-right: 85px;
             padding-top: 24px;
         }
