@@ -183,9 +183,9 @@ letter-spacing: 0.02em;
 }
 /* ------MEDIA DESKTOP---------- */
 @media  screen and (min-width: 1280px){
-    .images-div-resto{
+    /* .images-div-resto{
         right: 180px;
-    }
+    } */
 
     /* -----весь верхний текст------- */
     .div-two-resto{
