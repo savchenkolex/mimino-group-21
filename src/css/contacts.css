@@ -79,7 +79,9 @@
   margin: 0;
 }
 
-
+.postal {
+  max-width: 285px;
+}
 
 .tel2 {
   margin-right: 12px;
