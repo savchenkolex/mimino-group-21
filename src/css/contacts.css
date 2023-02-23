@@ -79,9 +79,7 @@
   margin: 0;
 }
 
-.tel1 {
-  width: 144px;
-}
+
 
 .tel2 {
   margin-right: 12px;
@@ -95,8 +93,8 @@
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: var(--logo-gray);
-
-  display: flex;
+  width: fit-content;
+  display: inline-flex;
   align-items: center;
   background-color: #fff;
   border: 0.5px solid var(--akzent-yellow);
