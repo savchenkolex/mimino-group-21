@@ -1,6 +1,9 @@
 .about-res-div {
     margin: 0;
 }
+.div-homepage-list{
+    position: relative;
+}
 
 
 .top-paragr-resto{ font-family: 'Times New Roman', Times, serif;
@@ -57,12 +60,11 @@ color: #494848;
     }
     .restourant-list-resto{
         display: flex;
-        margin-bottom: 20px;
-        justify-content: flex-end;
-        gap: 24px;
+        gap: 40px;
      }
-    .arrow-swiper{
-        gap: 34px;
+     /* button */
+
+    .svg-list{
         display: flex;
         justify-content: flex-end;
     }
@@ -87,6 +89,23 @@ color: #494848;
         /* justify-content: flex-end; */
         flex-direction: row-reverse;
     }
+    .div-homepage-list{
+        margin-bottom: 20px;
+
+    }
+    /* левая li слайда */
+    .restourant-list-item-resto{
+        margin-left: 50px;
+    }
+    .restourant-list-resto{
+        gap: 24px;
+    }
+    /* правая картинка слайда */
+    .images-shadow-resto-r{
+        position: absolute;
+        right: -180px;
+    }
+
     }
 
 /*-----------MEDIA_TABLET--------------- */
@@ -175,8 +194,11 @@ letter-spacing: 0.02em;
 }
 /* ---------------restourant list-resto --------------*/
 .restourant-list-resto{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.div-resto-list{
     margin-bottom: 32px;
-    gap: 40px;
  }
  /* ------arrow list----------- */
 
