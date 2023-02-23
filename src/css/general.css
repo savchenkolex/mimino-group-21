@@ -15,6 +15,7 @@
   --color-footer: #0e0c07;
   --black: #000000;
   --logo-gray: #494848;
+  --text-gray: #7A7A7A;
   --white: #ffffff;
   --placeholder: #808080;
 
@@ -28,26 +29,6 @@
 .container {
   margin: 0 auto;
   padding: 0 15px;
-}
-@media screen and (min-width: 414px) {
-  .container {
-    width: 414px;
-    padding: 0 15px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-    padding: 0 47px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding: 0 85px;
-  }
 }
 
 .visually-hidden {
@@ -68,17 +49,14 @@
   letter-spacing: 0.3em;
 }
 
-.logo-title {
-}
-
 .logo-link {
   cursor: pointer;
 }
 
 .logo-text {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.07;
 }
 
 .logo-light {
@@ -92,3 +70,32 @@
 .similar {
   list-style: none;
 }
+
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding: 0 47px;
+  }
+
+  .logo-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 85px;
+  }
+}
+

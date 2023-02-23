@@ -1,3 +1,8 @@
+.about-res-div {
+    margin: 0;
+}
+
+
 .top-paragr-resto{ font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
 font-size: 20px;
@@ -72,12 +77,15 @@ color: #494848;
     }
     /* headline-mimino */
     .div-two-resto{
+        display: flex;
+        flex-direction: column;
         width: 258px;
         margin-bottom: 28px;
     }
     .images-div-resto{
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+        flex-direction: row-reverse;
     }
     }
 
@@ -93,6 +101,9 @@ color: #494848;
     position: relative;
     padding-top: 120px;
     padding-bottom: 32px;
+}
+.about-res-div {
+    display: flex;
 }
 .top-paragr-resto{
 font-weight: 400;
@@ -154,9 +165,13 @@ letter-spacing: 0.02em;
 
 .images-div-resto{
     margin-left: auto;
-    position: absolute;
+    /* position: absolute;
     top: -24px;
-    right: 112px;
+    right: 112px; */
+}
+.images-shadow-resto {
+    margin: 0;
+    margin-top: calc( -32px - 120px );
 }
 /* ---------------restourant list-resto --------------*/
 .restourant-list-resto{
@@ -168,9 +183,9 @@ letter-spacing: 0.02em;
 }
 /* ------MEDIA DESKTOP---------- */
 @media  screen and (min-width: 1280px){
-    .images-div-resto{
+    /* .images-div-resto{
         right: 180px;
-    }
+    } */
 
     /* -----весь верхний текст------- */
     .div-two-resto{

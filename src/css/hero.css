@@ -36,7 +36,7 @@ screen and (min-resolution: 2dppx) {
 
     margin-bottom: 24px;
 
-    font-family: 'Film P3';
+    font-family: 'FilmP3Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -46,7 +46,7 @@ screen and (min-resolution: 2dppx) {
 }
 .h-hero {
     margin-bottom: 40px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Regular';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -56,7 +56,7 @@ screen and (min-resolution: 2dppx) {
 }
 .p-hero {
     margin-bottom: 113px;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -79,7 +79,7 @@ screen and (min-resolution: 2dppx) {
     padding: 8px 8px 8px 16px;
     margin: 0;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -112,8 +112,8 @@ screen and (min-resolution: 2dppx) {
 }
 .reserve-button-hero {
     display: inline-block;
-    padding: 14px 24px;
-    font-family: 'Montserrat';
+    padding: 14px 22px;
+    font-family: 'Montserrat Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

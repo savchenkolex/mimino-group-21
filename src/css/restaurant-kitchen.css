@@ -72,12 +72,15 @@ color: #494848;
     }
     /* headline-mimino */
     .div-two{
+        display: flex;
+        flex-direction: column;
         width: 258px;
         margin-bottom: 28px;
     }
     .images-div{
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+        flex-direction: row-reverse;
     }
     }
 
@@ -93,6 +96,9 @@ color: #494848;
     position: relative;
     padding-top: 120px;
     padding-bottom: 32px;
+}
+.kit-res-div {
+    display: flex;
 }
 .top-paragr{
 font-weight: 400;
@@ -155,9 +161,13 @@ letter-spacing: 0.02em;
 
 .images-div{
     margin-left: auto;
-    position: absolute;
+    /* position: absolute;
     top: -24px;
-    right: 112px;
+    right: 112px; */
+}
+.images-shadow {
+    margin: 0;
+    margin-top: calc( -32px - 120px );
 }
 /* ---------------restourant list --------------*/
 .restourant-list{
@@ -170,9 +180,9 @@ letter-spacing: 0.02em;
 }
 /* ------MEDIA DESKTOP---------- */
 @media  screen and (min-width: 1280px){
-    .images-div{
+    /* .images-div{
         right: 149px;
-    }
+    } */
 
     /* -----весь верхний текст------- */
     .div-two{
