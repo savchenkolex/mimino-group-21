@@ -1,6 +1,4 @@
-.about-res-div {
-    margin: 0;
-}
+
 
 
 .top-paragr-resto{ font-family: 'Times New Roman', Times, serif;
@@ -9,14 +7,7 @@ font-size: 20px;
 line-height: 1.15;
 color: #B4B4B4;
     }
-.chairs-and-paragr{
-    margin-top: 32px;
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
 /* paragraphes about restourant-resto */
 .paragr-about-restourant-resto{
     font-family: 'Montserrat SemiBold';
@@ -69,7 +60,9 @@ color: #494848;
     /* -----MOBILE MEDIA------ */
     @media  screen and (min-width: 414px) and (max-width: 1023px){
 
-        
+        .about-res-div {
+            margin-bottom: 16px;
+        }   
     .about-resto{
         background-color: var(--fon-lemon);
         padding-top: 16px;
@@ -81,6 +74,15 @@ color: #494848;
         flex-direction: column;
         width: 258px;
         margin-bottom: 28px;
+    }
+    .chairs-and-paragr{
+        margin-top: 32px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;    
+    }
+    .div-about-chairs{
+        margin-left: auto;
     }
     .images-div-resto{
         display: flex;
@@ -102,8 +104,8 @@ color: #494848;
     padding-top: 120px;
     padding-bottom: 32px;
 }
-.about-res-div {
-    display: flex;
+.about-res-div {display: flex;
+    margin-bottom: 142px;
 }
 .top-paragr-resto{
 font-weight: 400;
@@ -120,7 +122,6 @@ color: #494848;
 
 }
 .div-two-resto{
-    margin-bottom: 142px;
     width: 439px;
 }
 /* paragraphes bottom MIMINO */
@@ -134,10 +135,14 @@ color: #7A7A7A;
 
 }
 /* -------div-about-chairs--------- */
-
 .div-about-chairs{
-    margin-left: 48px;
     max-width: 312px;
+}
+.chairs-and-paragr{
+    gap: 48px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;    
 }
 .about-chairs{
     margin-left: auto;
@@ -146,11 +151,6 @@ font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 color: var(--brown);
-
-}
-.chairs-and-paragr{
-    display: flex;
-    justify-content: flex-start;
 
 }
 .about-resto{
@@ -190,11 +190,11 @@ letter-spacing: 0.02em;
     /* -----весь верхний текст------- */
     .div-two-resto{
         width: 518px;
-        margin-bottom: 162px;
     }
     /* -----желтый цвет напроив мяса------- */
-    .div-about-chairs{
-        margin-left: 32px;
+    
+    .chairs-and-paragr{
+        gap: 32px;
     }
     .about-resto > .container{
         padding: 0 85px;
