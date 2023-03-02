@@ -70,7 +70,7 @@ screen and (min-resolution: 2dppx) {
     align-items: center;
     top: 64px;
     right: 15px;
-    width: 225px;
+    /* width: 225px; */
     height: 47px;
     background-color: transparent;
     border: 1px solid rgba(243, 198, 83, 0.7);
@@ -209,7 +209,7 @@ screen and (min-resolution: 2dppx) {
         position: static;
         display: flex;
         align-items: center;
-        width: 285px;   
+        /* width: 285px;    */
         
         padding: 8px 8px 8px 16px;
         margin: 0 137px 0 47px;
@@ -263,7 +263,7 @@ screen and (min-resolution: 2dppx) {
         margin-bottom: 0;
     }
     .map-hero {
-        margin-right: 253px;
+        /* margin-right: 253px; */
     }
     .reserve-li-hero:not(:last-child) {
         margin-right: 60px;
