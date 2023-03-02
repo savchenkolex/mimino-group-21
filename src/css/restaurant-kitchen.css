@@ -1,3 +1,7 @@
+.div-restourant-list{
+    margin-bottom: 20px;
+    position: relative;
+}
 .top-paragr{ font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
 font-size: 20px;
@@ -49,15 +53,14 @@ color: #494848;
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px #00000040;
 
+    
     }
-    .restourant-list{
-        display: flex;
-        margin-bottom: 20px;
-        justify-content: flex-end;
-        gap: 24px;
+    .images-shadow-r {
+        border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px #00000040;
     }
+    
     .arrow-swiper{
-        gap: 34px;
         display: flex;
         justify-content: flex-end;
     }
@@ -81,6 +84,19 @@ color: #494848;
         display: flex;
         /* justify-content: flex-end; */
         flex-direction: row-reverse;
+    }
+    /* slider */
+    .restourant-list-item{
+        margin-left: 50px;
+    }
+    .restourant-list{
+        display: flex;
+        gap: 24px;}
+
+    /* right slide */
+    .images-shadow-r{
+        position: absolute;
+        right: -180px;
     }
     }
 
@@ -170,11 +186,19 @@ letter-spacing: 0.02em;
     margin-top: calc( -32px - 120px );
 }
 /* ---------------restourant list --------------*/
-.restourant-list{
+
+.div-restourant-list{
     margin-bottom: 32px;
-    gap: 40px;
     
  }
+ /* restourant-list */
+ .restourant-list{
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    gap: 40px;
+ }
+
  /* ------arrow list----------- */
 
 }
@@ -196,8 +220,12 @@ letter-spacing: 0.02em;
     .about-kitchen > .container{
         padding: 0 85px;
     }
-    /* ------ slider-------- */
     .restourant-list{
+        display: flex;
+        gap: 24px;
+    }
+    /* ------ slider-------- */
+    .div-restourant-list{
         margin-bottom: 40px;
     }
 }
