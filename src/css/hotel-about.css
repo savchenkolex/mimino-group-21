@@ -1,12 +1,12 @@
 .main-about-hotel {
   background-color: var(--fon-lemon);
   position: relative;
-  padding-top: 18px;
-  padding-bottom: 28px;
 }
 
 .main-about-hotel > .container {
   overflow: hidden;
+  padding-top: 18px;
+  padding-bottom: 28px;
 }
 
 .main-about-hotel > .container img {
@@ -74,7 +74,7 @@
   max-width: 100px;
 
   color: #c79002;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .about-hotel-pic-bottom {
@@ -138,7 +138,7 @@
 
     color: #c79002;
 
-    padding-top: 70px;
+    margin-top: 70px;
   }
 
   .main-hotel-slider-l {
@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .main-about-hotel {
+  .main-about-hotel > .container {
     padding-top: 120px;
     padding-bottom: 32px;
   }
@@ -200,7 +200,7 @@
   .hotel-discription-bottom {
     font-size: 16px;
     max-width: 312px;
-    margin-top: 125px;
+    margin-top: 195px;
   }
 
   .main-slider-wrap {
@@ -225,7 +225,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .main-about-hotel {
+  .main-about-hotel > .container {
     padding-bottom: 50px;
   }
 
@@ -242,7 +242,7 @@
   }
 
   .hotel-discription-bottom {
-    margin-top: 100px;
+    margin-top: 168px;
   }
 
   .main-slider-wrap {
@@ -267,7 +267,8 @@
     transition: fill 250ms var(--timing-function);
   }
 
-  .button-icon:focus, .button-icon:hover {
+  .button-icon:focus,
+  .button-icon:hover {
     fill: var(--akzent-yellow);
   }
 }
