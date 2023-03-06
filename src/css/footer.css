@@ -67,7 +67,7 @@
   border: none;
   fill: var(--akzent-yellow);
   transition: background-color var(--timing-function),
-              color var(--timing-function)
+              color var(--timing-function),
               fill var(--timing-function);
 }
 
@@ -107,6 +107,7 @@
   }
 
   .footer-soc-link {
+    background-color: var(--color-footer);
     padding: 10px 12px;
     border: 0.5px solid var(--akzent-yellow);
     border-radius: 2px;
