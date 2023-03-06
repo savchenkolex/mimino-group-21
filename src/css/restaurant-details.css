@@ -135,7 +135,7 @@ margin-bottom: 12px;
 
 .button-menu{
   display: flex;
-  margin-top: 32px;
+  /* margin-top: 32px; */
   justify-content: space-around;
 }
 .restaurant-details-list-button:first-child {
